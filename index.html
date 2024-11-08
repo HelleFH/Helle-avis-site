@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-HX/PS8xWOTQ2fOXyOYBLCWevO8PapHgC+xyJGz57QsBRf4Lq3V7/KgTzwT28mR0oDdS/oEGcDDiJtrZke9UBvA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link href="style.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+
+    <script src="burger.js" defer></script>
+    <script src="form-newsletter.js" defer></script>
+    <script src="active-link.js" defer></script>
+
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <nav class="topnav">
+                <ul>                    <a href="index.html">
+                      <img class="menu-logo-mobil" src="images/Logo.png">
+                    </a>
+                </ul>
+                <ul class="flex1 menu">
+                  <li>
+                    <a href="index.html">
+                      <img class="menu-logo" src="images/Logo.png">
+                    </a>
+                  </li>
+                  <li><a href="tom1.html" class="active-link">NYHEDER</a></li>
+                  <li><a href="tom2.html">POLITIK</a></li>
+                  <li><a href="index.html">DEBAT</a></li>
+                  <li><a href="sport-artikel.html" >SPORT</a></li>
+                  <li><a href="index.html">KULTUR</a></li>
+                  <li><a href="index.html">BEGIVENHEDER</a></li>
+                  <li class="move-right"><a href="abonnement1.html">ABONNEMENT</a></li>
+                </ul>
+              
+                <button id="burger-menu-button" class="burger-menu-button" aria-label="Toggle Menu">
+                  <i class="fas fa-bars"></i>
+                </button>
+              </nav>
+        </header>
+
+        <main>
+
+            <div id="newsletter-form-container" style="display: none;">
+                <form id="newsletter-form">
+                    <div class="close-icon" onclick="closeForm()">X</div>
+                    <p class="nyhedsbrev-besked">Tilmeld dig vores nyhedsbrev:</p>
+                    <label for="name">Navn:</label>
+                    <input type="text" id="name" name="name">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                    <button type="submit">Tilmeld</button>
+                    <div id="thanks-message" style="display: none;">
+                        <p>Tak for din tilmelding!</p>
+                        <div class="close-icon" onclick="closeThanks()">X</div>
+                    </div>
+                </form>
+            </div>
+              
+              
+              
+              
+              
+              
+            <div class="index">
+
+                <div class="feautured-container">
+                    <figure class="featured1"> <img src="images/distortion-header.jpg">
+                        <figcaption>
+                            Distortion rykkes til august grundet Corona 
+                        </figcaption>
+                    </figure>
+                    <figure class="featured2"> <img src="images/fifa-traenere-header.jpg">
+                        <figcaption>
+                            Gymnasium ansætter FIFA-trænere (kbh)
+                        </figcaption>
+                    </figure>
+                    <a href="sport-artikel.html">
+                        <figure class="featured3">
+                            <img src="images/tour-de-france-header.jpg">
+                            <figcaption>
+                                Tour de France-ruten i København er klar
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <figure class="featured4"> <img src="images/udligningsreform-header.jpg">
+                        <figcaption class="h3">
+                            Regning på 1,6 milliarder til Københavnerne
+                        </figcaption>
+                    </figure>
+                </div>
+
+
+
+
+
+
+
+                <section class="forsideartikler">
+
+                    <div class="tourdefrance-tekst">
+
+                        <a href="sport-artikel.html">
+                            <img class="tourdefrance-billede" src="images/tour-de-france-artikel-forside.jpg">
+                            <div>
+                                <h1 class="tour-h1">Tour de France-ruten i København 2022 er klar </h1>
+                                <p class="brødtekst-index">
+
+                                Verdens største
+                                cykelløb, Tour de France, kommer til verdens bedste cykelby i sommeren 2022.
+                                København er den officielle start-by, og nu er ruten gennem byens gader klar.
+                                </p>
+                            </div>
+                        </a>
+
+                    </div>
+
+
+
+
+
+                    <article class="mest-læste flex1">
+                        <h2>Mest læste</h2>
+                        <div>
+                            Distortion: Gadefestivallen er rykket til august grundet COVID-19
+                        </div>
+                        <div>
+                            Københavns Private Gymnasium ansætter nye FIFA-trænere
+                        </div>
+                        <div>
+                            Tour de France-ruten i København 2021 er klar
+                        </div>
+                        <div> Zulu Awards: Alt hvad der skete
+                        </div>
+                        <div>
+                            Nu åbner københavns museum
+                        </div>
+                    </article>
+                </section>
+
+
+                <section class="udligningsreform">
+                    <img class="udligningsreform-billede" src="images/udligningsreform-artikel-forside.jpg">
+                    <div class="udligningsreform-tekst">
+                        <h1> Fredag steg københavnernes regning for udligning pludselig til 1,6 milliarder
+                        </h1>
+                        <p  class="brødtekst-index">
+
+                            Regningen for en ny udligningsreform bliver langt større for en række
+                            hovedstadskommuner, viste
+                            nye
+                            beregninger fredag. Nu er kender flere af hovedstadens borgmestre, at de er nødt til at
+                            hæve
+                            skatten.
+                        </p>
+                    </div>
+                </section>
+
+
+            </div>
+        </main>
+
+</body>
+
+<footer>
+
+    <nav class="bottomnav">
+
+
+        <p>
+            <div class="kontakt">
+            iKøbenhavn | Københavnvej 151 | 2300 København S | Tlf. 30 55 30 44 | ikøbenhavn@mail.dk
+        </div>
+        <div > Åbningstider:
+
+        </div>
+        <div > Mandag: 9.00-17.00 | Tirsdag 9.00-14.00 | Onsdag:
+            10.00-14.00 | Torsdag:
+            10.00-14.00 |
+        </div>
+
+        <div class="åbningstider">Fredag, lørdag, søndag: Lukket 
+
+        </div>
+
+        <div>
+            "Dette er en skoleopgave lavet på Next Uddannelse København/Medie"
+        </div>
+        </p>
+
+    </nav>
+</footer>
+</div>
+
+</html>

@@ -1,0 +1,419 @@
+/*************************INDEX****************************************/
+
+
+.index {
+    display: grid;
+
+}
+
+.index h1 {
+    font-size: 2.75em;
+    line-height: 53px;
+}
+
+.brødtekst-index {
+    font-size: 1.5em;
+    line-height: 2em;
+}
+
+#newsletter-form-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 275px;
+    background-color: #EEEEEE;
+    z-index: 9999;
+    transition: all 0.3s ease-in-out;
+    padding-top: 2em;
+    padding-right: 2em;
+    padding-left: 2em;
+    padding-bottom: 1em;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+
+}
+
+#newsletter-form {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+
+}
+
+.nyhedsbrev-besked {
+    padding-bottom: 2em;
+    grid-column: 1/span 2;
+    font-size: 1.3em;
+    font-weight: 700;
+    text-align: center;
+}
+
+#newsletter-form button {
+    padding: 0.5em;
+    font-weight: 200;
+    margin: 0;
+    grid-column: 1/span 2;
+    position: relative;
+}
+
+#newsletter-form label {
+    text-align: right;
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 26px;
+    grid-column: 1;
+    justify-self: flex-start;
+    padding-left: 2em;
+    padding-bottom: 3em;
+    line-height: 26px;
+
+}
+
+#thanks-message {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 275px;
+    background-color: #EEEEEE;
+    z-index: 9998;
+    transition: all 0.3s ease-in-out;
+    padding-top: 2em;
+    padding-right: 2em;
+    padding-left: 2em;
+    padding-bottom: 1em;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+
+}
+
+#thanks-message p {
+    font-size: 1.5em;
+    font-weight: 700;
+    text-align: center;
+}
+
+.close-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    
+  }
+  
+
+input {
+    border: none;
+    width: 100%;
+    grid-column: 2;
+    height: 26px;
+}
+
+.feautured-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    padding-top: 1em;
+}
+
+.feautured1 {
+    grid-column: 1;
+}
+
+.feautured2 {
+    grid-column: 2;
+}
+
+.feautured3 {
+    grid-column: 3;
+}
+
+.feautured4 {
+    grid-column: 4;
+}
+
+figcaption {
+
+
+    max-width: 225px;
+    padding-top: 0.5em;
+    font-size: 1.125em;
+    line-height: 21.78px;
+    font-weight: 700;
+}
+
+.forsideartikler {
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+    padding-bottom: 2em;
+    padding-top: 1.5em;
+}
+
+.tourdefrance-tekst {
+    padding-right: 12%;
+    grid-column: 1;
+}
+
+.mest-læste div {
+    padding-top: 1em;
+    font-size: 1.375em;
+    line-height: 2em;
+}
+
+.mest-læste h2 {
+    font-size: 1.75em;
+    color: #E30613;
+    border-bottom: 2px black solid;
+    padding-bottom: 0.1em;
+}
+
+.mest-læste {
+    padding-left: 2%;
+    padding-right: 1%;
+    grid-column: 2;
+
+}
+
+.udligningsreform-image {
+    grid-row: 1
+}
+
+.udligningsreform h1 {
+    padding-right: 15%;
+
+}
+
+.udligningsreform-tekst {
+    grid-row: 2;
+    padding-right: 32%;
+    padding-bottom: 3em;
+
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 101.5em) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+
+
+
+    .index {
+        display: grid;
+        font-size: 1.5em;
+    }
+
+    .index h1 {
+        font-size: 2.75em;
+        line-height: 53px;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+    }
+
+    .brødtekst-index {
+        font-size: 1.25em;
+        line-height: 1.75em;
+    }
+
+
+
+    .feautured-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        padding-top: 1em;
+        grid-row: 1;
+        padding-left: 5%;
+        padding-right: 5%;
+        margin: 0 auto;
+        gap: 5em;
+    }
+
+    .feautured1 {
+        grid-column: 1;
+    }
+
+    .feautured2 {
+        grid-column: 2;
+    }
+
+    .feautured3 {
+        grid-column: 1;
+    }
+
+    .feautured4 {
+        grid-column: 2;
+    }
+
+    figcaption {
+
+
+        max-width: 225px;
+        padding-top: 0.5em;
+    }
+
+    .forsideartikler {
+
+        display: block;
+        font-size: 1.375em;
+        padding-bottom: 2em;
+        padding-top: 1.5em;
+    }
+
+    .tourdefrance-tekst {
+        padding-right: 0;
+        padding-bottom: 2em;
+    }
+
+
+    .mest-læste div {
+        padding-top: 1em;
+    }
+
+    .mest-læste h2 {
+        font-size: 30px;
+        color: #E30613;
+        border-bottom: 2px black solid;
+        padding-bottom: 0.1em;
+        font-weight: 700;
+    }
+
+    .mest-læste {
+        padding-left: 0;
+        padding-right: 0;
+
+    }
+
+
+    .udligningsreform-billede {
+        width: 90%;
+    }
+
+    .udligningsreform h1 {
+        padding-right: 0;
+
+    }
+
+    .udligningsreform-tekst {
+        grid-row: 6;
+        padding-right: 0;
+        padding-bottom: 3em;
+
+    }
+
+}
+
+@media only screen and (min-device-width: 300px) and (max-device-width: 768px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+
+
+
+    .index {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .index h1 {
+        font-size: 2em;
+        line-height: auto;
+    }
+
+    .brødtekst-index {
+        font-size: 1.25em;
+        line-height: 1.5em;
+    }
+
+
+    .feautured-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        padding-top: 1em;
+        grid-row: 1;
+        padding-left: 0%;
+        padding-right: 0%;
+        margin: auto;
+    }
+
+    .feautured1 {
+        grid-column: 1;
+    }
+
+    .feautured2 {
+        grid-column: 1;
+    }
+
+    .feautured3 {
+        grid-column: 1;
+    }
+
+    .feautured4 {
+        grid-column: 1;
+    }
+
+    figcaption {
+
+
+        max-width: 225px;
+        padding-top: 0.5em;
+    }
+
+    .forsideartikler {
+
+        display: block;
+        padding-bottom: 2em;
+        padding-top: 1.5em;
+    }
+
+    .tourdefrance-billede {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .tourdefrance-tekst {
+        padding-right: 0;
+        padding-bottom: 2em;
+    }
+
+
+    .mest-læste div {
+        padding-top: 1em;
+    }
+
+    .mest-læste h2 {
+        font-size: 30px;
+        color: #E30613;
+        border-bottom: 2px black solid;
+        padding-bottom: 0.1em;
+        font-weight: 700;
+    }
+
+    .mest-læste {
+        padding-left: 0;
+        padding-right: 0;
+
+    }
+
+
+    .udligningsreform-billede {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .udligningsreform h1 {
+        padding-right: 0;
+
+
+    }
+
+    .udligningsreform-tekst {
+        grid-row: 6;
+        padding-right: 0;
+        padding-bottom: 3em;
+
+    }
+
+}

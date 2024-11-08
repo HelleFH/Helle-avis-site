@@ -1,0 +1,670 @@
+/***************ABONNEMENT2***************************/
+
+
+
+.abonnement2 {
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	grid-row: auto;
+	grid-gap: 1em;
+	font-weight: 400;
+	padding-top: 1.5em;
+	min-width: 800px;
+	width: max-content;
+	max-width: 800px;
+margin:0 auto; 
+}
+
+.abonnement2-header {
+	padding-left: 17%;
+	padding-right: 17%;
+	grid-row: 1;
+	grid-column: 1/span 2;
+	text-align: center;
+	padding-bottom: 2em;
+}
+
+/*****************FORM+CHECKBOXES*****************************/
+
+form {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	grid-template-rows: repeat(auto, 1.625em);
+	gap: 1em;
+	background-color: #EEEEEE;
+	padding-right: 10%;
+	padding-left: 0%;
+	padding-top: 3em;
+	padding-bottom: 3em;
+	align-items: center;
+	grid-row: 2;
+	grid-column: 1;
+	min-width: 400px;
+
+
+}
+
+.form-abonnement label {
+	text-align: right;
+	font-size: 0.75em !important;
+	line-height: 26px;
+}
+
+.form-abonnement input[type="email"],
+.form-abonnement input[type="password"],
+.form-abonnement input[type="text"],
+.form-abonnement input[type="tel"] {
+	width: 100%;
+	padding: 5px;
+	font-size: 1em;
+	grid-column: 2 /span 1;
+
+}
+
+.checkboxes {
+	display: flex;
+	flex-direction: column;
+	grid-column: 2 /span 1;
+	grid-row: 9;
+	padding-top: 2em;
+
+}
+
+.checkboxes label {
+	text-align: left;
+}
+
+.checkboxes div {
+	display: flex;
+	align-items: flex-start;
+	margin-bottom: 1em;
+
+}
+
+.checkboxes input[type="checkbox"] {
+	margin-right: 0.5em;
+	margin-top: 0.45em;
+
+}
+
+.checkboxes_input {
+	grid-column: 1/2;
+	height: 0.75em;
+	width: 0.75em;
+	appearance: none;
+	background-color: #FFFFFF;
+}
+
+input[type="checkbox" i] {
+	border: none;
+	vertical-align: bottom;
+
+}
+
+input {
+	border: none;
+}
+
+
+/*************************************KASSE TIL HØJRE*******************************/
+
+.abonnementdetaljer-kasse {
+
+	grid-column: 2;
+	align-items: flex-start;
+	display: flex;
+	flex-direction: column;
+	grid-row: 2;
+	min-width: 200px;
+	max-width: 225px;
+
+}
+
+
+.abonnementdetaljer-kasse button {
+	margin-top: 1.25em;
+
+	font-size: 1em;
+}
+
+
+
+.abonnementdetaljer-tekst h3 {
+	margin-top: 0;
+	margin-bottom: 0.625em;
+}
+
+.abonnementdetaljer-tekst p {
+	margin-top: 0;
+	margin-bottom: 5px;
+	font-size: 10px;
+}
+
+
+.abonnementdetaljer-tekst {
+	background-color: #EEEEEE;
+	padding-left: 5%;
+	padding-right: 5%;
+	font-weight: 400;
+	line-height: 16px;
+	display: flex;
+	flex-direction: column;
+	padding-top: 10%;
+
+
+
+}
+
+.priser {
+	border-bottom: 1px black solid;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 25px;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	display: flex;
+	justify-content: space-between;
+}
+
+
+#besked {
+	text-align: right;
+	color: #F00;
+}
+
+#pris,
+#rabat,
+#total {
+	align-self: flex-end;
+	font-size: 1em;
+	line-height: 25px;
+}
+
+.normalpris {
+	border-top: 1px black solid;
+}
+
+.i-alt {
+	font-weight: 700;
+}
+
+.vilkår-abonnement2 {
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+
+
+/* /* ******************KASSE NEDERST*************************/
+
+.skrivtilos-kasse {
+	grid-column: 1 /span 2;
+	margin: 0 auto;
+	background-color: #EEEEEE;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	padding-top: 2em;
+	margin-bottom: 4em;
+	min-width: 800px;
+	
+}
+
+.skrivtilos-kasse button {
+	font-weight: 400;
+	font-size: 0.75em;
+	margin-top: 1.25em;
+
+}
+
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 101.5em) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+
+/***************ABONNEMENT2***************************/
+
+
+
+.abonnement2 {
+	display: grid;
+	grid-template-columns:600px;
+	grid-row: auto;
+	grid-gap: 1em;
+	font-weight: 400;
+	padding-top: 1em;
+width:600;
+justify-items: center;
+}
+
+.abonnement2-header {
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 1em;
+	grid-row: 1;
+	grid-column: 1;
+	text-align: center;
+	max-width: 600px;
+	padding-left:5%;
+	padding-right:5%;
+	padding-bottom:1em;
+}
+
+/*****************FORM+CHECKBOXES*****************************/
+
+form {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	grid-template-rows: repeat(auto, 1.625em);
+	gap: 1em;
+	background-color: #EEEEEE;
+	padding-right: 10%;
+	padding-left: 0%;
+	padding-top: 3em;
+	padding-bottom: 3em;
+	align-items: center;
+	grid-row: 2;
+	grid-column: 1;
+	min-width: 400px;
+	max-width: 500px;	
+
+
+}
+
+.form-abonnement label {
+	text-align: right;
+	font-size: 0.75em !important;
+	line-height: 26px;
+}
+
+.form-abonnement input[type="email"],
+.form-abonnement input[type="password"],
+.form-abonnement input[type="text"],
+.form-abonnement input[type="tel"] {
+	width: 100%;
+	padding: 5px;
+	font-size: 1em;
+	grid-column: 2 /span 1;
+
+}
+
+.checkboxes {
+	display: flex;
+	flex-direction: column;
+	grid-column: 2 /span 1;
+	grid-row: 9;
+	padding-top: 2em;
+
+}
+
+.checkboxes label {
+	text-align: left;
+}
+
+.checkboxes div {
+	display: flex;
+	align-items: flex-start;
+	margin-bottom: 1em;
+
+}
+
+.checkboxes input[type="checkbox"] {
+	margin-right: 0.5em;
+	margin-top: 0.45em;
+
+}
+
+.checkboxes_input {
+	grid-column: 1/2;
+	height: 0.75em;
+	width: 0.75em;
+	appearance: none;
+	background-color: #FFFFFF;
+}
+
+input[type="checkbox" i] {
+	border: none;
+	vertical-align: bottom;
+
+}
+
+input {
+	border: none;
+}
+
+
+/*************************************KASSE TIL HØJRE*******************************/
+
+.abonnementdetaljer-kasse {
+
+	grid-column: 1;
+	align-items: flex-start;
+	display: flex;
+	flex-direction: column;
+	grid-row: 3;
+	min-width: 300px;
+	max-width: 400px;
+
+}
+
+
+.abonnementdetaljer-kasse button {
+	margin-top: 1.25em;
+
+	font-size: 1em;
+}
+
+
+
+.abonnementdetaljer-tekst h3 {
+	margin-top: 0;
+	margin-bottom: 0.625em;
+}
+
+.abonnementdetaljer-tekst p {
+	margin-top: 0;
+	margin-bottom: 5px;
+	font-size: 10px;
+}
+
+
+.abonnementdetaljer-tekst {
+	background-color: #EEEEEE;
+	padding-left: 5%;
+	padding-right: 5%;
+	font-weight: 400;
+	line-height: 16px;
+	display: flex;
+	flex-direction: column;
+	padding-top: 10%;
+
+
+
+}
+
+.priser {
+	border-bottom: 1px black solid;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 25px;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	display: flex;
+	justify-content: space-between;
+}
+
+
+#besked {
+	text-align: right;
+	color: #F00;
+}
+
+#pris,
+#rabat,
+#total {
+	align-self: flex-end;
+	font-size: 1em;
+	line-height: 25px;
+}
+
+.normalpris {
+	border-top: 1px black solid;
+}
+
+.i-alt {
+	font-weight: 700;
+}
+
+.vilkår-abonnement2 {
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+
+
+/* /* ******************KASSE NEDERST*************************/
+
+.skrivtilos-kasse {
+	grid-column: 1;
+	margin: 0 auto;
+	background-color: #EEEEEE;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	padding-top: 2em;
+	margin-bottom: 4em;
+	min-width: 400px;
+	
+}
+
+.skrivtilos-kasse button {
+	font-weight: 400;
+	font-size: 1em;
+	margin-top: 1.25em;
+
+}
+
+
+}
+
+@media only screen and (min-device-width: 300px) and (max-device-width: 768px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+	.abonnement2 {
+		display: grid;
+		grid-template-columns:300px;
+		grid-row: auto;
+		grid-gap: 1em;
+		font-weight: 400;
+		padding-top: 2em;
+	width:300px;
+	min-width:300px;
+	}
+	
+	.abonnement2-header {
+		padding-left: 0;
+		padding-right: 0;
+		padding-top: 1em;
+		grid-row: 1;
+		grid-column: 1;
+		text-align: center;
+		max-width: 300px;
+		padding-left:5%;
+		padding-right:5%;
+	}
+	
+	/*****************FORM+CHECKBOXES*****************************/
+	
+	form {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(auto, 1fr);
+		gap: 1em;
+		background-color: #EEEEEE;
+		padding-right: 10%;
+		padding-left: 0%;
+		padding-top: 3em;
+		padding-bottom: 3em;
+		align-items: center;
+		grid-row: 2;
+		grid-column: 1;
+		min-width: 270px;
+		max-width: 270px;	
+	
+	
+	}
+	
+	.form-abonnement label {
+		text-align: left;
+		font-size: 1em !important;
+		line-height: 26px;
+		padding-left:1em;
+	}
+	
+	.form-abonnement input[type="email"],
+	.form-abonnement input[type="password"],
+	.form-abonnement input[type="text"],
+	.form-abonnement input[type="tel"] {
+		width: 90%;
+		font-size: 1em;
+		grid-column: 1;
+		margin-left:7%;
+		margin-right:5%;
+	
+	}
+	
+	.checkboxes {
+		display: flex;
+		flex-direction: column;
+		grid-column: 1 ;
+		grid-row: auto;
+		padding-top: 2em;
+		padding-left:10%;
+	
+	}
+	
+	.checkboxes label {
+		text-align: left;
+	}
+	
+	.checkboxes div {
+		display: flex;
+		align-items: flex-start;
+		margin-bottom: 1em;
+	
+	}
+	
+	.checkboxes input[type="checkbox"] {
+		margin-right: 0.5em;
+		margin-top: 0.45em;
+	
+	}
+	
+	.checkboxes_input {
+		grid-column: 1;
+		height: 0.75em;
+		width: 0.75em;
+		appearance: none;
+		background-color: #FFFFFF;
+	}
+	
+	input[type="checkbox" i] {
+		border: none;
+		vertical-align: bottom;
+	
+	}
+	
+	input {
+		border: none;
+	}
+	
+	
+	/*************************************KASSE TIL HØJRE*******************************/
+	
+	.abonnementdetaljer-kasse {
+	
+		grid-column: 1;
+		align-items: flex-start;
+		display: flex;
+		flex-direction: column;
+		grid-row: 3;
+		min-width: 300px;
+		max-width: 300px;
+	
+	}
+	
+	
+	.abonnementdetaljer-kasse button {
+		margin-top: 1.25em;
+	
+		font-size: 1em;
+	}
+	
+	
+	
+	.abonnementdetaljer-tekst h3 {
+		margin-top: 0;
+		margin-bottom: 0.625em;
+	}
+	
+	.abonnementdetaljer-tekst p {
+		margin-top: 0;
+		margin-bottom: 5px;
+		font-size: 10px;
+	}
+	
+	
+	.abonnementdetaljer-tekst {
+		background-color: #EEEEEE;
+		padding-left: 5%;
+		padding-right: 5%;
+		font-weight: 400;
+		line-height: 16px;
+		display: flex;
+		flex-direction: column;
+		padding-top: 10%;
+	
+	
+	
+	}
+	
+	.priser {
+		border-bottom: 1px black solid;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 25px;
+		padding-top: 0.5em;
+		padding-bottom: 0.5em;
+		display: flex;
+		justify-content: space-between;
+	}
+	
+	
+	#besked {
+		text-align: right;
+		color: #F00;
+	}
+	
+	#pris,
+	#rabat,
+	#total {
+		align-self: flex-end;
+		font-size: 1em;
+		line-height: 25px;
+	}
+	
+	.normalpris {
+		border-top: 1px black solid;
+	}
+	
+	.i-alt {
+		font-weight: 700;
+	}
+	
+	.vilkår-abonnement2 {
+		padding-top: 2em;
+		padding-bottom: 2em;
+	}
+	
+	
+	/* /* ******************KASSE NEDERST*************************/
+	
+	.skrivtilos-kasse {
+		grid-column: 1;
+		margin: 0 auto;
+		background-color: #EEEEEE;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		padding-top: 2em;
+		margin-bottom: 4em;
+		min-width: 300px;
+		text-align: center;
+		
+	}
+	
+	.skrivtilos-kasse button {
+		font-weight: 400;
+		font-size: 1em;
+		margin-top: 1.25em;
+	
+	}
+	
+}

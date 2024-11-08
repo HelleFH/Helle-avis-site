@@ -1,0 +1,634 @@
+
+
+.sport-artikel-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 1000px;
+    justify-items: center;
+    position: relative;
+    margin: 0 auto;
+}
+
+
+.rubrik {
+    text-align: center;
+    padding-bottom: 0.5em;
+}
+.manchet {
+    padding-bottom: 0.7em;
+}
+
+
+.underrubrik {
+
+    font-weight: 400;
+    font-size: 1.625em;
+    line-height: 2em;
+    /* or 123% */
+
+    text-align: center;
+
+    padding-bottom: 1.5em;
+}
+
+.tourdefranceartikel-billede {
+    grid-row: 1;
+    grid-column: 1;
+    margin-bottom: -5em;
+}
+
+.artikel-linje1 {
+
+    font-weight: 400;
+    font-size: 1.125em;
+    text-align: center;
+    color: #E30613;
+    padding-top: 1em;
+}
+
+.artikel-forfatter {
+    font-weight: 400;
+    font-size: 0.75em !important;
+    line-height: 15px;
+    padding-bottom: 1em;
+}
+
+
+.artikel-top {
+    background-color: white;
+    grid-row: 2;
+    grid-column: 1;
+    align-items: center;
+    margin-left: 11%;
+    margin-right: 11%;
+    padding-left: 4%;
+    padding-right: 4%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    top: 10em;
+}
+
+
+.artikel-tekst {
+    padding-left: 25%;
+    padding-right: 25%;
+
+    line-height: 1.625em;
+    font-weight: 400;
+    font-size: 1.125em;
+}
+
+.artikel-slut {
+    padding-top: 2em;
+    padding-bottom:2em;
+}
+
+
+
+
+.gallery-grid,
+.slider-grid {
+    display: grid;
+    align-items: center;
+    gap: 1em;
+}
+
+.gallery-grid {
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 4em 0 3.5em;
+}
+
+.slider-grid {
+    grid-column: 2/3;
+    grid-template-columns: repeat(1, auto);
+}
+
+.slider {
+    width: 640px;
+    grid-area: 1/1/2/-1;
+    /* Change the grid area to span all columns */
+    overflow: hidden;
+    order: 1;
+
+    /* Add this line to center the slider */
+}
+
+
+.slider img {
+    justify-self: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slide {
+    display: none;
+}
+
+.slide--active {
+    display: block;
+    order: 2;
+}
+
+.caption {
+    font-size: 0.625;
+    line-height: 1.6;
+    align-self: end;
+    grid-column: 3/4;
+    font-weight: 400;
+    font-size: 0.625em !important;
+    line-height: 16px !important;
+    padding-bottom: 1em;
+}
+
+#next,
+#back {
+    grid-area: 1/1/2/-1;
+    font-size: 2.5em;
+    margin: 0.5em;
+    cursor: pointer;
+    color: #fff;
+    order: 3;
+}
+
+#next {
+    justify-self: end;
+}
+
+#back {
+    justify-self: start;
+}
+
+
+.maps-grid {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    justify-content: center;
+    align-content: center;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding-top: 2em;
+}
+
+.google-map {
+    position: relative;
+    padding-bottom: 75%;
+    /* forholdet mellem højde og bredde*/
+    height: 0;
+    overflow: hidden;
+    grid-column: 2;
+    grid-row: 1/-1;
+
+
+}
+
+.maps-caption {
+    grid-column: 1;
+    grid-row: 3;
+    font-weight: 400;
+    font-size: 0.625em !important;
+    line-height: 16px !important;
+    bottom: 0;
+    align-self: end;
+}
+
+.google-map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+
+
+}
+
+
+
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 101.5em) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+
+
+
+
+    .sport-artikel-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 600px;
+        justify-items: center;
+        position: relative;
+        margin: 0 auto;
+        padding-top:2em;
+
+    }
+    
+    
+    .rubrik {
+        text-align: center;
+        padding-bottom: 0.5em;
+    }
+    .manchet {
+        padding-bottom: 0.7em;
+    }
+    
+    
+    .underrubrik {
+    
+        font-weight: 400;
+        font-size: 1.625em;
+        line-height: 2em;
+        /* or 123% */
+    
+        text-align: center;
+    
+        padding-bottom: 1.5em;
+    }
+    
+    .tourdefranceartikel-billede {
+        grid-row: 1;
+        grid-column: 1;
+        margin-bottom: 0em;
+        width: 80%;
+    }
+    
+    .artikel-linje1 {
+    
+        font-weight: 400;
+        font-size: 1.125em;
+        text-align: center;
+        color: #E30613;
+        padding-top: 1em;
+    }
+    
+    .artikel-forfatter {
+        font-weight: 400;
+        font-size: 0.75em !important;
+        line-height: 15px;
+        padding-bottom: 1em;
+    }
+    
+    
+    .artikel-top {
+        background-color: white;
+        grid-row: 2;
+        grid-column: 1;
+        align-items: center;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        top: 10em;
+    }
+    
+    
+    .artikel-tekst {
+        padding-left: 5%;
+        padding-right: 5%;
+    
+        line-height: 1.625em;
+        font-weight: 400;
+        font-size: 1.125em;
+    }
+    
+    .artikel-slut {
+        padding-top: 0;
+    }
+        
+    .gallery-grid,
+    .slider-grid {
+        display: grid;
+        align-items: center;
+        gap: 1em;
+    }
+    
+    .gallery-grid {
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding: 2em 0 2em;
+    }
+    
+    .slider-grid {
+        grid-column: 1;
+        grid-row:1;
+        grid-template-columns: repeat(1, auto);
+    }
+    
+    .slider {
+        max-width:600px;
+        grid-area: 1/1/2/-1;
+        overflow: hidden;
+        order: 1;
+        }
+    
+    
+    .slider img {
+        justify-self: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .slide {
+        display: none;
+    }
+    
+    .slide--active {
+        display: block;
+        order: 2;
+    }
+    
+    .caption {
+        font-size: 0.625;
+        line-height: 1.6;
+        align-self: end;
+        grid-column: 1;
+        grid-row:2;
+        font-weight: 400;
+        font-size: 0.625em !important;
+        line-height: 16px !important;
+        padding-bottom: 1em;
+    }
+    
+    #next,
+    #back {
+        grid-area: 1/1/2/-1;
+        font-size: 2.5em;
+        margin: 0.5em;
+        cursor: pointer;
+        color: #fff;
+        order: 3;
+    }
+    
+    #next {
+        justify-self: end;
+    }
+    
+    #back {
+        justify-self: start;
+    }
+    
+    
+    .maps-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 50px;
+        justify-content: center;
+        align-content: center;
+        padding-top: 1em;
+    }
+    
+    .google-map {
+        position: relative;
+        padding-bottom: 75%;
+        /* forholdet mellem højde og bredde*/
+        height: 0;
+        overflow: hidden;
+        grid-column: 1;
+        grid-row: 1;
+    
+    
+    }
+    
+    .maps-caption {
+        grid-column: 1;
+        grid-row: 2;
+        font-weight: 400;
+        font-size: 0.625em !important;
+        line-height: 16px !important;
+        bottom: 0;
+        align-self: flex-start;
+        padding-top:1em;
+    }
+    
+    .google-map iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+    
+    
+    }
+    
+    
+    
+    }
+
+
+@media only screen and (min-device-width: 300px) and (max-device-width: 700px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+
+
+
+
+    .sport-artikel-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 300px;
+        justify-items: center;
+        position: relative;
+        margin: 0 auto;
+    }
+    
+    
+    .rubrik {
+        text-align: center;
+        padding-bottom: 0.5em;
+
+    }
+    .manchet {
+        padding-bottom: 0.7em;
+
+    }
+    
+    
+    .underrubrik {
+    
+        font-weight: 400;
+        font-size: 1.2em;
+        line-height: 1.6em;
+        /* or 123% */
+    
+        text-align: center;
+    
+        padding-bottom: 1em;
+    }
+    
+    .tourdefranceartikel-billede {
+        grid-row: 1;
+        grid-column: 1;
+        margin-bottom: 0em;
+        width: 90%;
+    }
+    
+    .artikel-linje1 {
+    
+        font-weight: 400;
+        font-size: 1.125em;
+        text-align: center;
+        color: #E30613;
+        padding-top: 1em;
+    }
+    
+    .artikel-forfatter {
+        font-weight: 400;
+        font-size: 0.75em !important;
+        line-height: 15px;
+        padding-bottom: 1em;
+    }
+    
+    
+    .artikel-top {
+        background-color: white;
+        grid-row: 2;
+        grid-column: 1;
+        align-items: center;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        top: 10em;
+    }
+    
+    
+    .artikel-tekst {
+        padding-left: 5%;
+        padding-right: 5%;
+    
+        line-height: 1.5em;
+        font-weight: 400;
+        font-size: 1em;
+    }
+    
+    .artikel-slut {
+        padding-top: 0;
+    }
+    
+  
+    
+    .gallery-grid,
+    .slider-grid {
+        display: grid;
+        align-items: center;
+        gap: 1em;
+    }
+    
+    .gallery-grid {
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding: 2em 0 2em;
+    }
+    
+    .slider-grid {
+        grid-column: 1;
+        grid-row:1;
+        grid-template-columns: repeat(1, auto);
+    }
+    
+    .slider {
+        max-width:300px;
+        grid-area: 1/1/2/-1;
+        /* Change the grid area to span all columns */
+        overflow: hidden;
+        order: 1;
+    
+        /* Add this line to center the slider */
+    }
+    
+    
+    .slider img {
+        justify-self: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .slide {
+        display: none;
+    }
+    
+    .slide--active {
+        display: block;
+        order: 2;
+    }
+    
+    .caption {
+        font-size: 0.625;
+        line-height: 1.6;
+        align-self: end;
+        grid-column: 1;
+        grid-row:2;
+        font-weight: 400;
+        font-size: 0.625em !important;
+        line-height: 16px !important;
+        padding-bottom: 1em;
+    }
+    
+    #next,
+    #back {
+        grid-area: 1/1/2/-1;
+        font-size: 2em;
+        margin: 0.4em;
+        cursor: pointer;
+        color: #fff;
+        order: 3;
+        opacity: 80%;
+
+    }
+    
+    #next {
+        justify-self: end;
+    }
+    
+    #back {
+        justify-self: start;
+    }
+    
+    
+    .maps-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 50px;
+        justify-content: center;
+        align-content: center;
+        padding-top: 1em;
+        padding-bottom:2em;
+
+    }
+    
+    .google-map {
+        position: relative;
+        padding-bottom: 75%;
+        /* forholdet mellem højde og bredde*/
+        height: 0;
+        overflow: hidden;
+        grid-column: 1;
+        grid-row: 1;
+    
+    
+    }
+    
+    .maps-caption {
+        grid-column: 1;
+        grid-row: 2;
+        font-weight: 400;
+        font-size: 0.625em !important;
+        line-height: 16px !important;
+        bottom: 0;
+        align-self: flex-start;
+        padding-top:1em;
+    }
+    
+    .google-map iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+    
+    
+    }
+}
+

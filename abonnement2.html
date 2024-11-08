@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="abonnement2.css" rel="stylesheet">
+
+    <script src="form.js" defer></script>
+    <script src="result.js" defer></script>
+    <script src="burger.js" defer></script>
+
+
+</head>
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <header>
+            <nav class="topnav">
+                <ul>                    <a href="index.html">
+                      <img class="menu-logo-mobil" src="images/Logo.png">
+                    </a>
+                </ul>
+                <ul class="flex1 menu">
+                  <li>
+                    <a href="index.html">
+                      <img class="menu-logo" src="images/Logo.png">
+                    </a>
+                  </li>
+                  <li><a href="tom1.html" class="active-link">NYHEDER</a></li>
+                  <li><a href="tom2.html">POLITIK</a></li>
+                  <li><a href="index.html">DEBAT</a></li>
+                  <li><a href="sport-artikel.html" >SPORT</a></li>
+                  <li><a href="index.html">KULTUR</a></li>
+                  <li><a href="index.html">BEGIVENHEDER</a></li>
+                  <li class="move-right"><a href="abonnement1.html">ABONNEMENT</a></li>
+                </ul>
+              
+                <button id="burger-menu-button" class="burger-menu-button" aria-label="Toggle Menu">
+                  <i class="fas fa-bars"></i>
+                </button>
+              </nav>
+        </header>
+        <div class="abonnement2">
+
+       <div class="abonnement2-header"> <h1>Prøv iKøbenhavn gratis i 3 måneder</h1></div>
+
+            <div class="form-abonnement">
+                
+                <form action="abonnement3.html" method="post" id="my-form" novalidate>
+
+
+
+                    <label for="email">Indtast din email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="confirm-email">Bekræft din email:</label>
+                    <input type="email" id="confirm-email" name="confirm-email" required>
+
+                    <label for="password">Vælg adgangskode:</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <label for="confirm-password">Bekræft koden:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                    
+
+                    <label for="name">Fornavn:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="last-name">Efternavn:</label>
+                    <input type="text" id="last-name" name="last-name" required>
+
+                    <label for="phone">Telefon:</label>
+                    <input type="tel" id="phone" name="phone" required>
+
+                    <label for="address">Adresse:</label>
+                    <input type="text" id="address" name="address" required>
+
+              
+
+
+                    <div class="checkboxes">
+                        <div>
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <label for="newsletter">Jeg vil gerne modtage dagens vigtigste nyheder som udsendes hver
+                                morgen på mail</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="offers" name="offers">
+                            <label for="offers">Jeg vil gerne modtage relevante tilbud samt info om begivenheder,
+                                debatter m.m. </label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="terms" name="terms" required>
+                            <label for="terms">Jeg accepterer Dagbladet Informations produktvilkår</label>
+                        </div>
+                    </div>
+              
+            </div>
+
+            <div class="abonnementdetaljer-kasse">
+                <div class="abonnementdetaljer-tekst">
+                    <h3 id="heading"></h3>
+                    <p class="detaljer__text" id="tekst"></p>
+
+                    <div class="priser normalpris detaljer__price">
+                        Normalpris <span id="pris"></span>
+                    </div>
+
+                    <div class="priser detaljer__discount">
+                        Rabat <span id="rabat"></span>
+                    </div>
+
+                    <div class="priser i-alt detaljer__total">Pris i alt <span id="total"></span></div>
+
+                    <p class="vilkår-abonnement2 detaljer__terms">Tilbuddet gælder kun for husstande i Danmark, der
+                        ikke har abonneret inden for de sidste 12 måneder.</p>
+                </div>
+                <p id="besked"></p>
+
+                <button class="button button--form button--right" id="submit-btn">Bestil</button>
+            </div>
+
+            <div class="skrivtilos-kasse">
+
+                <p class="flex1">Har du spørgsmål angående abonnement?</p> <button id="submit-button" class="flex1"
+                    type="submit">Skriv
+                    til os</button>
+            </div>
+        </form>
+
+    </div>
+        </main>
+        <footer>
+
+            <nav class="bottomnav">
+        
+        
+                <p>
+                    <div class="kontakt">
+                    iKøbenhavn | Københavnvej 151 | 2300 København S | Tlf. 30 55 30 44 | ikøbenhavn@mail.dk
+                </div>
+                <div > Åbningstider:
+        
+                </div>
+                <div > Mandag: 9.00-17.00 | Tirsdag 9.00-14.00 | Onsdag:
+                    10.00-14.00 | Torsdag:
+                    10.00-14.00 |
+                </div>
+        
+                <div class="åbningstider">Fredag, lørdag, søndag: Lukket 
+        
+                </div>
+        
+                <div>
+                    "Dette er en skoleopgave lavet på Next Uddannelse København/Medie"
+                </div>
+                </p>
+        
+            </nav>
+        </footer>
+    </div>
+    </div>
+</body>
+<script>document.querySelector("#my-form").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent form submission
+
+    // Clear previous error messages
+    document.getElementById("firstNameError").textContent = "";
+    document.getElementById("lastNameError").textContent = "";
+    document.getElementById("emailError").textContent = "";
+    document.getElementById("passwordError").textContent = "";
+    document.getElementById("passwordRepeatError").textContent = "";
+    document.getElementById("termsError").textContent = "";
+
+    // Retrieving input elements
+    var firstNameInput = document.getElementsByName("firstName")[0];
+    var lastNameInput = document.getElementsByName("lastName")[0];
+    var emailInput = document.getElementsByName("email")[0];
+    var passwordInput = document.getElementsByName("password")[0];
+    var passwordRepeatInput = document.getElementsByName("confirm-password")[0];
+    var termsCheckbox = document.getElementById("terms");
+
+    // Retrieving input values
+    var firstName = firstNameInput.value.trim();
+    var lastName = lastNameInput.value.trim();
+    var email = emailInput.value.trim();
+    var password = passwordInput.value;
+    var passwordRepeat = passwordRepeatInput.value;
+
+    // Regular expression patterns
+    var namePattern = /^[A-Za-z\s]+$/;
+    var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    var isValid = true;
+
+    // Validate first name
+    if (!firstName) {
+        document.getElementById("firstNameError").textContent = "Please enter your first name";
+        firstNameInput.focus();
+        isValid = false;
+    } else if (!namePattern.test(firstName)) {
+        document.getElementById("firstNameError").textContent = "Please enter a valid first name";
+        firstNameInput.focus();
+        isValid = false;
+    }
+
+    // Validate last name
+    if (!lastName) {
+        document.getElementById("lastNameError").textContent = "Please enter your last name";
+        lastNameInput.focus();
+        isValid = false;
+    } else if (!namePattern.test(lastName)) {
+        document.getElementById("lastNameError").textContent = "Please enter a valid last name";
+        lastNameInput.focus();
+        isValid = false;
+    }
+
+    // Validate email
+    if (!email) {
+        document.getElementById("emailError").textContent = "Please enter your email";
+        emailInput.focus();
+        isValid = false;
+    } else if (!emailPattern.test(email)) {
+        document.getElementById("emailError").textContent = "Please enter a valid email";
+        emailInput.focus();
+        isValid = false;
+    }
+
+    // Validate password
+    if (password.length < 3) {
+        document.getElementById("passwordError").textContent = "Please enter a password";
+        passwordInput.focus();
+        isValid = false;
+    } else {
+        document.getElementById("passwordError").textContent = "";
+    }
+
+    // Validate password repeat
+    if (password !== passwordRepeat) {
+        document.getElementById("passwordRepeatError").textContent = "Passwords do not match";
+        passwordRepeatInput.focus();
+        isValid = false;
+    } else {
+        document.getElementById("passwordRepeatError").textContent = "";
+    }
+
+    // Validate terms checkbox
+    if (!termsCheckbox.checked) {
+        document.getElementById("termsError").textContent = "You must accept the terms and conditions";
+        termsCheckbox.focus();
+        isValid = false;
+    }
+
+    // If the form is invalid, do not submit
+    if (!isValid) {
+        return false;
+    }
+
+    // Submit the form if all validations passed
+    window.location.href = window.location.href;  // Redirect to same page as an example
+});
+
+// Enable or disable the submit button based on checkbox
+document.getElementById("terms").addEventListener("change", function() {
+    var submitButton = document.getElementById("submit-btn");
+    if (this.checked) {
+        submitButton.disabled = false;  // Enable submit button if checkbox is checked
+    } else {
+        submitButton.disabled = true;  // Disable submit button if checkbox is unchecked
+    }
+});
+</script>
+
+</html>

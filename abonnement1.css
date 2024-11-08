@@ -1,0 +1,324 @@
+/***************ABONNEMENT1***************************/
+.abonnement1 {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	gap: 40px;
+	font-size: 0.75em;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+
+.kasse1 h3,
+.kasse2 h3,
+.kasse3 h3 {
+	padding-top: 1.5em;
+	text-align: center;
+	padding-bottom: 2em;
+	padding-top: 2em;
+}
+
+
+
+.abonnement1 h1 {
+	text-align: center;
+	padding-top: 0.4em;
+	padding-bottom: 0;
+	grid-column: 1/-1;
+	padding-left: 15%;
+	padding-right: 15%;
+}
+
+.abonnement1 p {
+	padding-bottom: 1em;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+
+.kasse1,
+.kasse2,
+.kasse3 {
+	background-color: #E5E5E5;
+	display: grid;
+	box-shadow: 0 4px 3px rgba(0, 0, 0, 0.2);
+	position: relative;
+	min-width: 240px;
+
+}
+
+.kasse1 p,
+.kasse2 p,
+.kasse3 p {
+	font-size: 0.75em;
+
+}
+
+.kasse1 {
+	grid-column: 1;
+}
+
+.kasse2 {
+	grid-column: 2;
+}
+
+
+.kasse3 {
+	grid-column: 3;
+}
+
+.pris {
+	font-size: 0.625em;
+	text-align: center;
+	padding-top: 0.7em;
+}
+
+.studerende {
+	grid-column: 1/-1;
+	margin-top: 10em;
+	padding-top: 1em;
+	margin-top: 3%;
+	align-items: center;
+	background-color: #E5E5E5;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	position: relative;
+}
+
+
+.vilkår {
+	grid-column: 1/span 3;
+	display: flex;
+	flex-direction: column;
+	font-size: 1.5em;
+	line-height: 2em;
+	width: 100%;
+	text-align: left;
+	justify-items: left;
+}
+
+.mere {
+	font-style: italic;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 101.5em) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+
+
+	.abonnement1 {
+		display: grid;
+		grid-template-columns:1fr;
+		gap: 40px;
+		font-size: 0.75em;
+		max-width: 600px;
+		margin: 0 auto;
+		justify-items: center;
+	}
+	
+	
+	.kasse1 h3,
+	.kasse2 h3,
+	.kasse3 h3 {
+		padding-top: 1.5em;
+		text-align: center;
+		padding-bottom: 2em;
+		padding-top: 2em;
+	}
+	
+	
+	
+	.abonnement1 h1 {
+		text-align: center;
+		padding-top: 0.4em;
+		padding-bottom: 0;
+		grid-column: 1;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
+
+	
+	
+	.kasse1,
+	.kasse2,
+	.kasse3 {
+		background-color: #E5E5E5;
+		display: grid;
+		box-shadow: 0 4px 3px rgba(0, 0, 0, 0.2);
+		position: relative;
+		min-width: 300px;
+		max-width: 500px;
+	
+	}
+	
+	.kasse1 p,
+	.kasse2 p,
+	.kasse3 p {
+		font-size: 0.75em;
+		padding-bottom: 1em;
+		padding-left: 5%;
+		padding-right: 5%;
+	
+	}
+	
+	.kasse1 {
+		grid-column: 1;
+	}
+	
+	.kasse2 {
+		grid-column: 1;
+	}
+	
+	
+	.kasse3 {
+		grid-column: 1;
+	}
+	
+	.pris {
+		font-size: 0.625em;
+		text-align: center;
+		padding-top: 0.7em;
+	}
+	
+	.studerende {
+		grid-column: 1;
+		margin-top: 10em;
+		padding-top: 1em;
+		margin-top: 3%;
+		align-items: center;
+		background-color: #E5E5E5;
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		position: relative;
+	}
+	
+	
+	.vilkår {
+		grid-column: 1;
+		display: flex;
+		flex-direction: column;
+		font-size: 1.5em;
+		line-height: 2em;
+		width: 100%;
+		text-align: left;
+		justify-items: left;
+	}
+	
+	.mere {
+		font-style: italic;
+	}
+		
+}
+
+
+@media only screen and (min-device-width: 300px) and (max-device-width: 768px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+
+	.abonnement1 {
+		display: grid;
+		grid-template-columns:1fr;
+		gap: 40px;
+		font-size: 0.75em;
+		max-width: 300px;
+		margin: 0 auto;
+		justify-items: center;
+	}
+	
+	
+	.kasse1 h3,
+	.kasse2 h3,
+	.kasse3 h3 {
+		padding-top: 1.5em;
+		text-align: center;
+		padding-bottom: 2em;
+		padding-top: 2em;
+	}
+	
+	
+	
+	.abonnement1 h1 {
+		text-align: center;
+		padding-top: 0.4em;
+		padding-bottom: 0;
+		grid-column: 1;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
+
+	
+	
+	.kasse1,
+	.kasse2,
+	.kasse3 {
+		background-color: #E5E5E5;
+		display: grid;
+		box-shadow: 0 4px 3px rgba(0, 0, 0, 0.2);
+		position: relative;
+		min-width: 300px;
+		max-width: 500px;
+	
+	}
+	
+	.kasse1 p,
+	.kasse2 p,
+	.kasse3 p {
+		font-size: 0.75em;
+		padding-bottom: 1em;
+		padding-left: 5%;
+		padding-right: 5%;
+	
+	}
+	
+	.kasse1 {
+		grid-column: 1;
+	}
+	
+	.kasse2 {
+		grid-column: 1;
+	}
+	
+	
+	.kasse3 {
+		grid-column: 1;
+	}
+	
+	.pris {
+		font-size: 0.625em;
+		text-align: center;
+		padding-top: 0.7em;
+	}
+	
+	.studerende {
+		grid-column: 1;
+		margin-top: 10em;
+		padding-top: 1em;
+		margin-top: 3%;
+		align-items: center;
+		background-color: #E5E5E5;
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		position: relative;
+	}
+	
+	
+	.vilkår {
+		grid-column: 1;
+		display: flex;
+		flex-direction: column;
+		font-size: 1.5em;
+		line-height: 2em;
+		width: 100%;
+		text-align: left;
+		justify-items: left;
+	}
+	
+	.mere {
+		font-style: italic;
+	}
+		
+
+
+	
+}
