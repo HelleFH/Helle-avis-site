@@ -103,9 +103,9 @@
     width: 20px;
     height: 20px;
     cursor: pointer;
-    
-  }
-  
+
+}
+
 
 input {
     border: none;
@@ -114,11 +114,13 @@ input {
     height: 26px;
 }
 
-.feautured-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    justify-items: center;
-    padding-top: 1em;
+.featured-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+    margin-top:1em;
 }
 
 .feautured1 {
@@ -140,11 +142,12 @@ input {
 figcaption {
 
 
-    max-width: 225px;
     padding-top: 0.5em;
     font-size: 1.125em;
     line-height: 21.78px;
     font-weight: 700;
+    max-width:225px ;
+    
 }
 
 .forsideartikler {
@@ -181,18 +184,14 @@ figcaption {
 
 }
 
-.udligningsreform-image {
+.article-image {
     grid-row: 1
 }
 
-.udligningsreform h1 {
-    padding-right: 15%;
 
-}
 
-.udligningsreform-tekst {
+.article-tekst {
     grid-row: 2;
-    padding-right: 32%;
     padding-bottom: 3em;
 
 }
@@ -220,7 +219,7 @@ figcaption {
 
 
 
-    .feautured-container {
+    .featured-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-items: center;
@@ -246,13 +245,6 @@ figcaption {
 
     .feautured4 {
         grid-column: 2;
-    }
-
-    figcaption {
-
-
-        max-width: 225px;
-        padding-top: 0.5em;
     }
 
     .forsideartikler {
@@ -288,16 +280,16 @@ figcaption {
     }
 
 
-    .udligningsreform-billede {
+    .article-billede {
         width: 90%;
     }
 
-    .udligningsreform h1 {
+    .article h1 {
         padding-right: 0;
 
     }
 
-    .udligningsreform-tekst {
+    .article-tekst {
         grid-row: 6;
         padding-right: 0;
         padding-bottom: 3em;
@@ -307,6 +299,12 @@ figcaption {
 }
 
 @media only screen and (min-device-width: 300px) and (max-device-width: 768px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+
+    figcaption {
+
+        max-width: 150px;
+        padding-top: 0.5em;
+    }
 
 
 
@@ -327,38 +325,10 @@ figcaption {
     }
 
 
-    .feautured-container {
-        display: grid;
-        grid-template-columns: 1fr;
-        justify-items: center;
-        padding-top: 1em;
-        grid-row: 1;
-        padding-left: 0%;
-        padding-right: 0%;
-        margin: auto;
-    }
 
-    .feautured1 {
-        grid-column: 1;
-    }
+    .featured-container img {
+        max-width: 150px;
 
-    .feautured2 {
-        grid-column: 1;
-    }
-
-    .feautured3 {
-        grid-column: 1;
-    }
-
-    .feautured4 {
-        grid-column: 1;
-    }
-
-    figcaption {
-
-
-        max-width: 225px;
-        padding-top: 0.5em;
     }
 
     .forsideartikler {
@@ -398,18 +368,18 @@ figcaption {
     }
 
 
-    .udligningsreform-billede {
+    .article-billede {
         margin: 0 auto;
         width: 90%;
     }
 
-    .udligningsreform h1 {
+    .article h1 {
         padding-right: 0;
 
 
     }
 
-    .udligningsreform-tekst {
+    .article-tekst {
         grid-row: 6;
         padding-right: 0;
         padding-bottom: 3em;
