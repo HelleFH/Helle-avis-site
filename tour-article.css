@@ -1,6 +1,6 @@
 
 
-.sport-artikel-grid {
+.tour-article-grid {
     display: grid;
     grid-template-columns: 1fr;
     max-width: 1000px;
@@ -31,13 +31,13 @@
     padding-bottom: 1.5em;
 }
 
-.tourdefranceartikel-billede {
+.tourdefrancearticle-billede {
     grid-row: 1;
     grid-column: 1;
     margin-bottom: -5em;
 }
 
-.artikel-linje1 {
+.article-linje1 {
 
     font-weight: 400;
     font-size: 1.125em;
@@ -46,7 +46,7 @@
     padding-top: 1em;
 }
 
-.artikel-forfatter {
+.article-writer {
     font-weight: 400;
     font-size: 0.75em !important;
     line-height: 15px;
@@ -54,7 +54,7 @@
 }
 
 
-.artikel-top {
+.article-top {
     background-color: white;
     grid-row: 2;
     grid-column: 1;
@@ -70,7 +70,7 @@
 }
 
 
-.artikel-tekst {
+.article-text {
     padding-left: 25%;
     padding-right: 25%;
 
@@ -79,7 +79,7 @@
     font-size: 1.125em;
 }
 
-.artikel-slut {
+.article-end {
     padding-top: 2em;
     padding-bottom:2em;
 }
@@ -210,7 +210,7 @@
 
 
 
-    .sport-artikel-grid {
+    .tour-article-grid {
         display: grid;
         grid-template-columns: 1fr;
         max-width: 600px;
@@ -243,14 +243,14 @@
         padding-bottom: 1.5em;
     }
     
-    .tourdefranceartikel-billede {
+    .tourdefrancearticle-billede {
         grid-row: 1;
         grid-column: 1;
         margin-bottom: 0em;
         width: 80%;
     }
     
-    .artikel-linje1 {
+    .article-linje1 {
     
         font-weight: 400;
         font-size: 1.125em;
@@ -259,7 +259,7 @@
         padding-top: 1em;
     }
     
-    .artikel-forfatter {
+    .article-writer {
         font-weight: 400;
         font-size: 0.75em !important;
         line-height: 15px;
@@ -267,7 +267,7 @@
     }
     
     
-    .artikel-top {
+    .article-top {
         background-color: white;
         grid-row: 2;
         grid-column: 1;
@@ -283,7 +283,7 @@
     }
     
     
-    .artikel-tekst {
+    .article-text {
         padding-left: 5%;
         padding-right: 5%;
     
@@ -292,7 +292,7 @@
         font-size: 1.125em;
     }
     
-    .artikel-slut {
+    .article-end {
         padding-top: 0;
     }
         
@@ -421,7 +421,7 @@
 
 
 
-    .sport-artikel-grid {
+    .tour-article-grid {
         display: grid;
         grid-template-columns: 1fr;
         max-width: 300px;
@@ -454,14 +454,14 @@
         padding-bottom: 1em;
     }
     
-    .tourdefranceartikel-billede {
+    .tourdefrancearticle-billede {
         grid-row: 1;
         grid-column: 1;
         margin-bottom: 0em;
         width: 90%;
     }
     
-    .artikel-linje1 {
+    .article-linje1 {
     
         font-weight: 400;
         font-size: 1.125em;
@@ -470,7 +470,7 @@
         padding-top: 1em;
     }
     
-    .artikel-forfatter {
+    .article-writer {
         font-weight: 400;
         font-size: 0.75em !important;
         line-height: 15px;
@@ -478,7 +478,7 @@
     }
     
     
-    .artikel-top {
+    .article-top {
         background-color: white;
         grid-row: 2;
         grid-column: 1;
@@ -494,7 +494,7 @@
     }
     
     
-    .artikel-tekst {
+    .article-text {
         padding-left: 0%;
         padding-right: 0%;
     
@@ -503,7 +503,7 @@
         font-size: 1em;
     }
     
-    .artikel-slut {
+    .article-end {
         padding-top: 0;
     }
     

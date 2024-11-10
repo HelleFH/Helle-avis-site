@@ -11,7 +11,7 @@
     line-height: 53px;
 }
 
-.brødtekst-index {
+.maintext-index {
     font-size: 1.5em;
     line-height: 2em;
 }
@@ -41,7 +41,7 @@
 
 }
 
-.nyhedsbrev-besked {
+.newsletter-message {
     padding-bottom: 2em;
     grid-column: 1/span 2;
     font-size: 1.3em;
@@ -123,21 +123,6 @@ input {
     margin-top:1em;
 }
 
-.feautured1 {
-    grid-column: 1;
-}
-
-.feautured2 {
-    grid-column: 2;
-}
-
-.feautured3 {
-    grid-column: 3;
-}
-
-.feautured4 {
-    grid-column: 4;
-}
 
 figcaption {
 
@@ -159,25 +144,25 @@ figcaption {
     padding-top: 1.5em;
 }
 
-.tourdefrance-tekst {
+.tourdefrance-text {
     padding-right: 12%;
     grid-column: 1;
 }
 
-.mest-læste div {
+.top-stories div {
     padding-top: 1em;
     font-size: 1.375em;
     line-height: 2em;
 }
 
-.mest-læste h2 {
+.top-stories h2 {
     font-size: 1.75em;
     color: #E30613;
     border-bottom: 2px black solid;
     padding-bottom: 0.1em;
 }
 
-.mest-læste {
+.top-stories {
     padding-left: 2%;
     padding-right: 1%;
     grid-column: 2;
@@ -190,7 +175,7 @@ figcaption {
 
 
 
-.article-tekst {
+.article-text {
     grid-row: 2;
     padding-bottom: 3em;
 
@@ -212,40 +197,11 @@ figcaption {
         padding-bottom: 0.5em;
     }
 
-    .brødtekst-index {
+    .maintext-index {
         font-size: 1.25em;
         line-height: 1.75em;
     }
 
-
-
-    .featured-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        justify-items: center;
-        padding-top: 1em;
-        grid-row: 1;
-        padding-left: 5%;
-        padding-right: 5%;
-        margin: 0 auto;
-        gap: 5em;
-    }
-
-    .feautured1 {
-        grid-column: 1;
-    }
-
-    .feautured2 {
-        grid-column: 2;
-    }
-
-    .feautured3 {
-        grid-column: 1;
-    }
-
-    .feautured4 {
-        grid-column: 2;
-    }
 
     .forsideartikler {
 
@@ -255,41 +211,32 @@ figcaption {
         padding-top: 1.5em;
     }
 
-    .tourdefrance-tekst {
+    .tourdefrance-text {
         padding-right: 0;
         padding-bottom: 2em;
     }
 
 
-    .mest-læste div {
+    .top-stories div {
         padding-top: 1em;
     }
 
-    .mest-læste h2 {
-        font-size: 30px;
-        color: #E30613;
-        border-bottom: 2px black solid;
-        padding-bottom: 0.1em;
+    .top-stories h2 {
+ 
         font-weight: 700;
     }
 
-    .mest-læste {
+    .top-stories {
         padding-left: 0;
         padding-right: 0;
 
-    }
-
-
-    .article-billede {
-        width: 90%;
     }
 
     .article h1 {
         padding-right: 0;
 
     }
-
-    .article-tekst {
+    .article-text {
         grid-row: 6;
         padding-right: 0;
         padding-bottom: 3em;
@@ -306,8 +253,6 @@ figcaption {
         padding-top: 0.5em;
     }
 
-
-
     .index {
         display: flex;
         justify-content: center;
@@ -319,7 +264,7 @@ figcaption {
         line-height: auto;
     }
 
-    .brødtekst-index {
+    .maintext-index {
         font-size: 1.25em;
         line-height: 1.5em;
     }
@@ -338,51 +283,25 @@ figcaption {
         padding-top: 1.5em;
     }
 
-    .tourdefrance-billede {
-        width: 90%;
-        margin: 0 auto;
-    }
 
-    .tourdefrance-tekst {
-        padding-right: 0;
-        padding-bottom: 2em;
-    }
-
-
-    .mest-læste div {
+    .top-stories div {
         padding-top: 1em;
     }
 
-    .mest-læste h2 {
-        font-size: 30px;
-        color: #E30613;
-        border-bottom: 2px black solid;
-        padding-bottom: 0.1em;
+    .top-stories h2 {
+    
         font-weight: 700;
     }
 
-    .mest-læste {
+    .top-stories {
         padding-left: 0;
         padding-right: 0;
 
     }
 
-
-    .article-billede {
-        margin: 0 auto;
-        width: 90%;
-    }
-
     .article h1 {
         padding-right: 0;
 
-
-    }
-
-    .article-tekst {
-        grid-row: 6;
-        padding-right: 0;
-        padding-bottom: 3em;
 
     }
 

@@ -1,0 +1,97 @@
+/***************subscription1***************************/
+.subscription1 {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	gap: 40px;
+	font-size: 0.75em;
+	max-width: 800px;
+	margin: 0 auto;
+  }
+  
+  .subscription1 h1,
+  .box1 h3, .box2 h3, .box3 h3 {
+	text-align: center;
+	padding-top: 2em;
+	padding-bottom: 2em;
+  }
+  
+  .subscription1 h1 {
+	padding: 0.4em 15%;
+	grid-column: 1/-1;
+  }
+  
+  .subscription1 p, .box1 p, .box2 p, .box3 p {
+	padding: 0 5%;
+	font-size: 0.75em;
+	padding-bottom: 1em;
+  }
+  
+  .box1, .box2, .box3 {
+	background-color: #E5E5E5;
+	display: grid;
+	box-shadow: 0 4px 3px rgba(0, 0, 0, 0.2);
+	position: relative;
+	min-width: 240px;
+  }
+  
+  .pris {
+	font-size: 0.625em;
+	text-align: center;
+	padding-top: 0.7em;
+  }
+  
+  .studerende {
+	grid-column: 1/-1;
+	margin-top: 3%;
+	padding-top: 1em;
+	background-color: #E5E5E5;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	width: 100%;
+  }
+  
+  .vilkår {
+	grid-column: 1/-1;
+	display: flex;
+	flex-direction: column;
+	font-size: 1.5em;
+	line-height: 2em;
+	width: 100%;
+	text-align: left;
+  }
+  
+  .mere {
+	font-style: italic;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 1015px) {
+	.subscription1 {
+	  grid-template-columns: 1fr;
+	  max-width: 600px;
+	  justify-items: center;
+	}
+	
+	.box1, .box2, .box3 {
+	  max-width: 500px;
+	  min-width: 300px;
+	  grid-column: 1;
+	}
+  }
+  
+  @media (max-width: 768px) {
+	.subscription1 {
+	  max-width: 300px;
+	}
+	
+	.box1, .box2, .box3 {
+	  grid-column: 1;
+	}
+	
+	.studerende {
+	  margin-top: 3%;
+	}
+  }
+  

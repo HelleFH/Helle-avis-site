@@ -1,0 +1,241 @@
+/***************subscription2***************************/
+.subscription2 {
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	grid-gap: 1em;
+	font-weight: 400;
+	padding-top: 1.5em;
+	min-width: 800px;
+	max-width: 800px;
+	margin: 0 auto;
+  }
+  
+  .subscription2-header {
+	padding: 1em 17%;
+	grid-column: 1 / span 2;
+	text-align: center;
+	padding-bottom: 2em;
+  }
+  
+  form {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	gap: 1em;
+	background-color: #EEEEEE;
+	padding: 3em 10% 3em 0;
+	align-items: center;
+	min-width: 400px;
+  }
+  
+  .form-subscription label {
+	text-align: right;
+	font-size: 0.75em;
+	line-height: 26px;
+  }
+  
+  .form-subscription input[type="email"],
+  .form-subscription input[type="password"],
+  .form-subscription input[type="text"],
+  .form-subscription input[type="tel"] {
+	width: 100%;
+	padding: 5px;
+	font-size: 1em;
+	grid-column: 2;
+  }
+  
+  .checkboxes {
+	display: flex;
+	flex-direction: column;
+	grid-column: 2;
+	grid-row: 9;
+	padding-top: 2em;
+  }
+  
+  .checkboxes label {
+	text-align: left;
+  }
+  
+  .checkboxes div {
+	display: flex;
+	align-items: flex-start;
+	margin-bottom: 1em;
+  }
+  
+  .checkboxes input[type="checkbox"] {
+	margin-right: 0.5em;
+	margin-top: 0.45em;
+  }
+  
+  .checkboxes_input {
+	height: 0.75em;
+	width: 0.75em;
+	appearance: none;
+	background-color: #FFFFFF;
+  }
+  
+  .subscription-box {
+	grid-column: 2;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	min-width: 200px;
+	max-width: 225px;
+  }
+  
+  .subscription-box button {
+	margin-top: 1.25em;
+	font-size: 1em;
+  }
+  
+  .subscription-text {
+	background-color: #EEEEEE;
+	padding: 5%;
+	font-weight: 400;
+	line-height: 16px;
+	display: flex;
+	flex-direction: column;
+	padding-top: 10%;
+  }
+  
+  .subscription-text h3 {
+	margin: 0 0 0.625em;
+  }
+  
+  .subscription-text p {
+	margin: 0 0 5px;
+	font-size: 10px;
+  }
+  
+  .rates {
+	border-bottom: 1px solid black;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 25px;
+	padding: 0.5em 0;
+	display: flex;
+	justify-content: space-between;
+  }
+  
+  #message {
+	text-align: right;
+	color: #F00;
+  }
+  
+  #pris,
+  #rabat,
+  #total {
+	align-self: flex-end;
+	font-size: 1em;
+	line-height: 25px;
+  }
+  
+  .normalpris {
+	border-top: 1px solid black;
+  }
+  
+  .total {
+	font-weight: 700;
+  }
+  
+  .vilkår-subscription2 {
+	padding: 2em 0;
+  }
+  
+  .contact-form {
+	grid-column: 1 / span 2;
+	margin: 0 auto;
+	background-color: #EEEEEE;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	padding-top: 2em;
+	margin-bottom: 4em;
+	min-width: 800px;
+  }
+  
+  .contact-form button {
+	font-weight: 400;
+	font-size: 0.75em;
+	margin-top: 1.25em;
+  }
+  
+  /* Media Queries */
+  @media only screen and (max-width: 1015px) {
+	.subscription2 {
+	  grid-template-columns: 600px;
+	  justify-items: center;
+	  padding-top: 1em;
+	}
+  
+	.subscription2-header {
+	  padding: 1em;
+	  max-width: 600px;
+	  padding-left: 5%;
+	  padding-right: 5%;
+	}
+  
+	form {
+	  max-width: 500px;
+	}
+  
+	.subscription-box {
+	  grid-column: 1;
+	  max-width: 400px;
+	}
+  
+	.contact-form {
+	  min-width: 600px;
+	}
+  }
+  
+  @media only screen and (max-width: 768px) {
+	.subscription2 {
+	  grid-template-columns: 300px;
+	  width: 300px;
+	  min-width: 300px;
+	  padding-top: 2em;
+	}
+  
+	.subscription2-header {
+	  padding: 1em 5%;
+	  max-width: 300px;
+	}
+  
+	form {
+	  grid-template-columns: 1fr;
+	  min-width: 270px;
+	  max-width: 270px;
+	}
+  
+	.form-subscription label {
+	  text-align: left;
+	  font-size: 1em;
+	  padding-left: 1em;
+	}
+  
+	.form-subscription input[type="email"],
+	.form-subscription input[type="password"],
+	.form-subscription input[type="text"],
+	.form-subscription input[type="tel"] {
+	  margin-left: 7%;
+	  margin-right: 5%;
+	  width: 90%;
+	}
+  
+	.checkboxes {
+	  grid-column: 1;
+	  padding-left: 10%;
+	}
+  
+	.subscription-box {
+	  grid-column: 1;
+	  max-width: 300px;
+	}
+  
+	.contact-form {
+	  min-width: 300px;
+	  text-align: center;
+	}
+  }
+  

@@ -2,9 +2,9 @@ let heading = localStorage.getItem("overskrift");
 const headingText = document.querySelector("#heading");
 headingText.textContent = heading;
  
-let text = localStorage.getItem("tekst");
-const tekstText = document.querySelector("#tekst");
-tekstText.textContent = text;
+let text = localStorage.getItem("text");
+const textText = document.querySelector("#text");
+textText.textContent = text;
  
 let price = Number(localStorage.getItem("pris"));
 const prisText = document.querySelector("#pris");
