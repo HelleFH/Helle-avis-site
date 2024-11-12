@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="style.css" rel="stylesheet">
-    <link href="subscription2.css" rel="stylesheet">
+    <link href="subscription-form.css" rel="stylesheet">
 
     <script src="form.js" defer></script>
     <script src="result.js" defer></script>
@@ -18,41 +18,39 @@
 </head>
 
 <body>
-    <div id="wrapper">
 
-        <header>
-            <nav class="topnav">
-                <ul>                    <a href="index.html">
-                      <img class="menu-logo-mobil" src="images/Logo.png">
-                    </a>
-                </ul>
-                <ul class="flex1 menu">
-                  <li>
-                    <a href="index.html">
-                      <img class="menu-logo" src="images/Logo.png">
-                    </a>
-                  </li>
-                  <li><a href="tom1.html" class="active-link">NYHEDER</a></li>
-                  <li><a href="tour-article.html">POLITIK</a></li>
-                  <li><a href="index.html">DEBAT</a></li>
-                  <li><a href="tour-article.html" >SPORT</a></li>
-                  <li><a href="index.html">KULTUR</a></li>
-                  <li><a href="index.html">BEGIVENHEDER</a></li>
-                  <li class="move-right"><a href="subscription1.html">ABONNEMENT</a></li>
-                </ul>
-              
-                <button id="burger-menu-button" class="burger-menu-button" aria-label="Toggle Menu">
-                  <i class="fas fa-bars"></i>
-                </button>
-              </nav>
-        </header>
-        <div class="subscription2">
+    <header>
+        <nav class="topnav">
+            <ul>                    <a href="index.html">
+                  <img class="menu-logo-mobil" src="images/Logo.png">
+                </a>
+            </ul>
+            <ul class="flex1 menu">
+         
+              <li><a href="#" class="active-link">NYHEDER</a></li>
+              <li><a href="#">POLITIK</a></li>
+              <li><a href="#">DEBAT</a></li>
+              <li><a href="tour-article.html" >SPORT</a></li>
+              <li><a href="#">KULTUR</a></li>
+              <li><a href="#">BEGIVENHEDER</a></li>
+              <li class="move-right"><a href="subscription-overview.html">ABONNEMENT</a></li>
+            </ul>
+          
+            <button id="burger-menu-button" class="burger-menu-button" aria-label="Toggle Menu">
+              <i class="fas fa-bars"></i>
+            </button>
+          </nav>
+    </header>
 
-       <div class="subscription2-header"> <h1>Prøv iKøbenhavn gratis i 3 måneder</h1></div>
+        <div id="wrapper">
 
-            <div class="form-subscription">
+        <div class="subscription-form">
+
+       <div class="subscription-form-header"> <h1>Prøv iKøbenhavn gratis i 3 måneder</h1></div>
+
+            <div class="form">
                 
-                <form action="subscription3.html" method="post" id="my-form" novalidate>
+                <form action="subscription-success.html" method="post" id="my-form" novalidate>
 
 
 
@@ -120,7 +118,7 @@
 
                     <div class="rates total __total">Pris i alt <span id="total"></span></div>
 
-                    <p class="vilkår-subscription2 __terms">Tilbuddet gælder kun for husstande i Danmark, der
+                    <p class="vilkår-subscription-form __terms">Tilbuddet gælder kun for husstande i Danmark, der
                         ikke har abonneret inden for de sidste 12 måneder.</p>
                 </div>
                 <p id="message"></p>

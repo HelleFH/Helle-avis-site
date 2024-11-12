@@ -1,36 +1,32 @@
-
-
+/* General Layout */
 .tour-article-grid {
     display: grid;
     grid-template-columns: 1fr;
-    max-width: 1000px;
     justify-items: center;
     position: relative;
     margin: 0 auto;
 }
 
-
-.rubrik {
+.headline,
+.sub-headline {
     text-align: center;
+}
+
+.headline {
     padding-bottom: 0.5em;
 }
+
 .manchet {
     padding-bottom: 0.7em;
 }
 
-
-.underrubrik {
-
+.sub-headline {
     font-weight: 400;
     font-size: 1.625em;
     line-height: 2em;
-    /* or 123% */
-
-    text-align: center;
-
-    padding-bottom: 1.5em;
 }
 
+/* Article */
 .tourdefrancearticle-billede {
     grid-row: 1;
     grid-column: 1;
@@ -38,7 +34,6 @@
 }
 
 .article-linje1 {
-
     font-weight: 400;
     font-size: 1.125em;
     text-align: center;
@@ -53,40 +48,29 @@
     padding-bottom: 1em;
 }
 
-
 .article-top {
     background-color: white;
     grid-row: 2;
     grid-column: 1;
     align-items: center;
-    margin-left: 11%;
-    margin-right: 11%;
-    padding-left: 4%;
-    padding-right: 4%;
+    padding: 0 4%;
+    margin: 0 11%;
     text-align: center;
     display: flex;
     flex-direction: column;
     top: 10em;
 }
 
-
 .article-text {
-    padding-left: 25%;
-    padding-right: 25%;
-
     line-height: 1.625em;
     font-weight: 400;
     font-size: 1.125em;
-}
-
-.article-end {
-    padding-top: 2em;
-    padding-bottom:2em;
+    padding: 2em 25%;
 }
 
 
 
-
+/* Galleries & Slider */
 .gallery-grid,
 .slider-grid {
     display: grid;
@@ -97,7 +81,6 @@
 .gallery-grid {
     width: 100%;
     grid-template-columns: repeat(3, 1fr);
-    padding: 4em 0 3.5em;
 }
 
 .slider-grid {
@@ -108,13 +91,9 @@
 .slider {
     width: 640px;
     grid-area: 1/1/2/-1;
-    /* Change the grid area to span all columns */
     overflow: hidden;
     order: 1;
-
-    /* Add this line to center the slider */
 }
-
 
 .slider img {
     justify-self: center;
@@ -132,13 +111,10 @@
 }
 
 .caption {
-    font-size: 0.625;
+    font-size: 0.625em;
     line-height: 1.6;
     align-self: end;
     grid-column: 3/4;
-    font-weight: 400;
-    font-size: 0.625em !important;
-    line-height: 16px !important;
     padding-bottom: 1em;
 }
 
@@ -160,7 +136,7 @@
     justify-self: start;
 }
 
-
+/* Maps */
 .maps-grid {
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
@@ -173,21 +149,18 @@
 .google-map {
     position: relative;
     padding-bottom: 75%;
-    /* forholdet mellem højde og bredde*/
     height: 0;
     overflow: hidden;
     grid-column: 2;
     grid-row: 1/-1;
-
-
 }
 
 .maps-caption {
     grid-column: 1;
     grid-row: 3;
     font-weight: 400;
-    font-size: 0.625em !important;
-    line-height: 16px !important;
+    font-size: 0.625em;
+    line-height: 16px;
     bottom: 0;
     align-self: end;
 }
@@ -198,437 +171,118 @@
     left: 0;
     width: 100% !important;
     height: 100% !important;
-
-
 }
 
-
-
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 101.5em) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
-
-
-
-
+/* Media Queries */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1000px) {
     .tour-article-grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        max-width: 600px;
-        justify-items: center;
-        position: relative;
-        margin: 0 auto;
-        padding-top:2em;
+        padding-top: 2em;
+    }
 
-    }
-    
-    
-    .rubrik {
-        text-align: center;
-        padding-bottom: 0.5em;
-    }
-    .manchet {
-        padding-bottom: 0.7em;
-    }
-    
-    
-    .underrubrik {
-    
-        font-weight: 400;
-        font-size: 1.625em;
-        line-height: 2em;
-        /* or 123% */
-    
-        text-align: center;
-    
-        padding-bottom: 1.5em;
-    }
-    
     .tourdefrancearticle-billede {
-        grid-row: 1;
-        grid-column: 1;
         margin-bottom: 0em;
         width: 80%;
     }
-    
-    .article-linje1 {
-    
-        font-weight: 400;
-        font-size: 1.125em;
-        text-align: center;
-        color: #E30613;
-        padding-top: 1em;
-    }
-    
-    .article-writer {
-        font-weight: 400;
-        font-size: 0.75em !important;
-        line-height: 15px;
-        padding-bottom: 1em;
-    }
-    
-    
+
     .article-top {
-        background-color: white;
-        grid-row: 2;
-        grid-column: 1;
-        align-items: center;
-        margin-left: 0;
-        margin-right: 0;
-        padding-left: 0;
-        padding-right: 0;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        top: 10em;
+        margin: 0;
+        padding: 0;
     }
-    
-    
+
     .article-text {
-        padding-left: 5%;
-        padding-right: 5%;
-    
-        line-height: 1.625em;
-        font-weight: 400;
-        font-size: 1.125em;
+        padding: 0 !important;
     }
-    
-    .article-end {
-        padding-top: 0;
-    }
-        
-    .gallery-grid,
-    .slider-grid {
-        display: grid;
-        align-items: center;
-        gap: 1em;
-    }
-    
+
     .gallery-grid {
-        width: 100%;
         grid-template-columns: 1fr;
-        padding: 2em 0 2em;
+        padding: 2em 0;
     }
-    
-    .slider-grid {
-        grid-column: 1;
-        grid-row:1;
-        grid-template-columns: repeat(1, auto);
-    }
-    
+
     .slider {
-        max-width:600px;
-        grid-area: 1/1/2/-1;
-        overflow: hidden;
-        order: 1;
-        }
-    
-    
-    .slider img {
-        justify-self: center;
-        margin-left: auto;
-        margin-right: auto;
+        max-width: 600px;
     }
-    
-    .slide {
-        display: none;
-    }
-    
-    .slide--active {
-        display: block;
-        order: 2;
-    }
-    
+
     .caption {
-        font-size: 0.625;
-        line-height: 1.6;
-        align-self: end;
         grid-column: 1;
-        grid-row:2;
-        font-weight: 400;
-        font-size: 0.625em !important;
-        line-height: 16px !important;
-        padding-bottom: 1em;
+        grid-row: 2;
     }
-    
-    #next,
-    #back {
-        grid-area: 1/1/2/-1;
-        font-size: 2.5em;
-        margin: 0.5em;
-        cursor: pointer;
-        color: #fff;
-        order: 3;
-    }
-    
-    #next {
-        justify-self: end;
-    }
-    
-    #back {
-        justify-self: start;
-    }
-    
-    
+
     .maps-grid {
-        display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 50px;
-        justify-content: center;
-        align-content: center;
         padding-top: 1em;
     }
-    
+
     .google-map {
-        position: relative;
-        padding-bottom: 75%;
-        /* forholdet mellem højde og bredde*/
-        height: 0;
-        overflow: hidden;
         grid-column: 1;
         grid-row: 1;
-    
-    
     }
-    
+
     .maps-caption {
-        grid-column: 1;
         grid-row: 2;
-        font-weight: 400;
-        font-size: 0.625em !important;
-        line-height: 16px !important;
-        bottom: 0;
-        align-self: flex-start;
-        padding-top:1em;
-    }
-    
-    .google-map iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100% !important;
-        height: 100% !important;
-    
-    
-    }
-    
-    
-    
-    }
-
-
-@media only screen and (min-device-width: 300px) and (max-device-width: 700px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
-
-
-
-
-    .tour-article-grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        max-width: 300px;
-        justify-items: center;
-        position: relative;
-        margin: 0 auto;
-    }
-    
-    
-    .rubrik {
-        text-align: center;
-        padding-bottom: 0.5em;
-
-    }
-    .manchet {
-        padding-bottom: 0.7em;
-
-    }
-    
-    
-    .underrubrik {
-    
-        font-weight: 400;
-        font-size: 1.2em;
-        line-height: 1.6em;
-        /* or 123% */
-    
-        text-align: center;
-    
-        padding-bottom: 1em;
-    }
-    
-    .tourdefrancearticle-billede {
-        grid-row: 1;
-        grid-column: 1;
-        margin-bottom: 0em;
-        width: 90%;
-    }
-    
-    .article-linje1 {
-    
-        font-weight: 400;
-        font-size: 1.125em;
-        text-align: center;
-        color: #E30613;
         padding-top: 1em;
-    }
-    
-    .article-writer {
-        font-weight: 400;
-        font-size: 0.75em !important;
-        line-height: 15px;
-        padding-bottom: 1em;
-    }
-    
-    
-    .article-top {
-        background-color: white;
-        grid-row: 2;
-        grid-column: 1;
-        align-items: center;
-        margin-left: 0;
-        margin-right: 0;
-        padding-left: 0;
-        padding-right: 0;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        top: 10em;
-    }
-    
-    
-    .article-text {
-        padding-left: 0%;
-        padding-right: 0%;
-    
-        line-height: 1.5em;
-        font-weight: 400;
-        font-size: 1em;
-    }
-    
-    .article-end {
-        padding-top: 0;
-    }
-    
-  
-    
-    .gallery-grid,
-    .slider-grid {
-        display: grid;
-        align-items: center;
-        gap: 1em;
-    }
-    
-    .gallery-grid {
-        width: 100%;
-        grid-template-columns: 1fr;
-        padding: 2em 0 2em;
-    }
-    
-    .slider-grid {
-        grid-column: 1;
-        grid-row:1;
-        grid-template-columns: repeat(1, auto);
-    }
-    
-    .slider {
-        max-width:300px;
-        grid-area: 1/1/2/-1;
-        /* Change the grid area to span all columns */
-        overflow: hidden;
-        order: 1;
-    
-        /* Add this line to center the slider */
-    }
-    
-    
-    .slider img {
-        justify-self: center;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    .slide {
-        display: none;
-    }
-    
-    .slide--active {
-        display: block;
-        order: 2;
-    }
-    
-    .caption {
-        font-size: 0.625;
-        line-height: 1.6;
-        align-self: end;
-        grid-column: 1;
-        grid-row:2;
-        font-weight: 400;
-        font-size: 0.625em !important;
-        line-height: 16px !important;
-        padding-bottom: 1em;
-    }
-    
-    #next,
-    #back {
-        grid-area: 1/1/2/-1;
-        font-size: 2em;
-        margin: 0.4em;
-        cursor: pointer;
-        color: #fff;
-        order: 3;
-        opacity: 80%;
-
-    }
-    
-    #next {
-        justify-self: end;
-    }
-    
-    #back {
-        justify-self: start;
-    }
-    
-    
-    .maps-grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 50px;
-        justify-content: center;
-        align-content: center;
-        padding-top: 1em;
-        padding-bottom:2em;
-
-    }
-    
-    .google-map {
-        position: relative;
-        padding-bottom: 75%;
-        /* forholdet mellem højde og bredde*/
-        height: 0;
-        overflow: hidden;
-        grid-column: 1;
-        grid-row: 1;
-    
-    
-    }
-    
-    .maps-caption {
-        grid-column: 1;
-        grid-row: 2;
-        font-weight: 400;
-        font-size: 0.625em !important;
-        line-height: 16px !important;
-        bottom: 0;
-        align-self: flex-start;
-        padding-top:1em;
-    }
-    
-    .google-map iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100% !important;
-        height: 100% !important;
-    
-    
     }
 }
 
+@media only screen and (min-device-width: 300px) and (max-device-width: 700px) and (orientation: portrait) {
+    .tour-article-grid {
+        margin: 0 auto;
+    }
+
+    .article-top {
+        margin: 0;
+        padding: 0;
+    }
+
+    .sub-headline {
+        font-weight: 400;
+        font-size: 1.2em;
+    }
+
+    .tourdefrancearticle-billede {
+        width: 90%;
+    }
+
+    .article-text {
+        line-height: 1.5em;
+        font-size: 1em;
+        padding: 0 !important;
+    }
+
+    .gallery-grid {
+        padding: 2em 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .slider {
+        max-width: 300px;
+    }
+
+    .caption {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .maps-grid {
+        display: flex;
+        flex-direction: column;
+        padding-top: 1em;
+    }
+
+    .google-map {
+        height: 100%;
+        width: 100%;
+    }
+
+    .maps-caption {
+        padding-top: 1em;
+    }
+
+    #next,
+    #back {
+        font-size: 2em;
+        margin: 0.4em;
+        opacity: 80%;
+    }
+}

@@ -1,5 +1,5 @@
-/***************subscription2***************************/
-.subscription2 {
+/***************subscription-form***************************/
+.subscription-form {
 	display: grid;
 	grid-template-columns: 3fr 1fr;
 	grid-gap: 1em;
@@ -10,8 +10,7 @@
 	margin: 0 auto;
   }
   
-  .subscription2-header {
-	padding: 1em 17%;
+  .subscription-form-header {
 	grid-column: 1 / span 2;
 	text-align: center;
 	padding-bottom: 2em;
@@ -24,19 +23,18 @@
 	background-color: #EEEEEE;
 	padding: 3em 10% 3em 0;
 	align-items: center;
-	min-width: 400px;
   }
   
-  .form-subscription label {
+ form label {
 	text-align: right;
 	font-size: 0.75em;
 	line-height: 26px;
   }
   
-  .form-subscription input[type="email"],
-  .form-subscription input[type="password"],
-  .form-subscription input[type="text"],
-  .form-subscription input[type="tel"] {
+  form input[type="email"],
+  form input[type="password"],
+  form input[type="text"],
+  form input[type="tel"] {
 	width: 100%;
 	padding: 5px;
 	font-size: 1em;
@@ -73,15 +71,7 @@
 	background-color: #FFFFFF;
   }
   
-  .subscription-box {
-	grid-column: 2;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	min-width: 200px;
-	max-width: 225px;
-  }
-  
+
   .subscription-box button {
 	margin-top: 1.25em;
 	font-size: 1em;
@@ -137,7 +127,7 @@
 	font-weight: 700;
   }
   
-  .vilkår-subscription2 {
+  .vilkår-subscription-form {
 	padding: 2em 0;
   }
   
@@ -162,75 +152,40 @@
   
   /* Media Queries */
   @media only screen and (max-width: 1015px) {
-	.subscription2 {
-	  grid-template-columns: 600px;
-	  justify-items: center;
-	  padding-top: 1em;
+	.subscription-form {
+		display:flex;
+	flex-direction: column;
+	min-width: 100%;
+	justify-content: center;
+	align-items: center;
+
 	}
   
-	.subscription2-header {
-	  padding: 1em;
-	  max-width: 600px;
-	  padding-left: 5%;
-	  padding-right: 5%;
-	}
+
   
 	form {
-	  max-width: 500px;
+	 padding:2em 2em 1em;
 	}
   
-	.subscription-box {
-	  grid-column: 1;
-	  max-width: 400px;
-	}
-  
+
 	.contact-form {
 	  min-width: 600px;
 	}
   }
   
   @media only screen and (max-width: 768px) {
-	.subscription2 {
-	  grid-template-columns: 300px;
-	  width: 300px;
-	  min-width: 300px;
-	  padding-top: 2em;
-	}
+
+
   
-	.subscription2-header {
-	  padding: 1em 5%;
-	  max-width: 300px;
-	}
-  
-	form {
-	  grid-template-columns: 1fr;
-	  min-width: 270px;
-	  max-width: 270px;
-	}
-  
-	.form-subscription label {
+	form label {
 	  text-align: left;
 	  font-size: 1em;
 	  padding-left: 1em;
 	}
-  
-	.form-subscription input[type="email"],
-	.form-subscription input[type="password"],
-	.form-subscription input[type="text"],
-	.form-subscription input[type="tel"] {
-	  margin-left: 7%;
-	  margin-right: 5%;
-	  width: 90%;
-	}
-  
+
 	.checkboxes {
-	  grid-column: 1;
+	  grid-column: 1/span 2;
 	  padding-left: 10%;
-	}
-  
-	.subscription-box {
-	  grid-column: 1;
-	  max-width: 300px;
 	}
   
 	.contact-form {

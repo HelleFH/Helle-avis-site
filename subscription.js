@@ -16,7 +16,7 @@ function subscription() {
     localStorage.setItem("pris", 315);
   }
   if (this.getAttribute("ID") === "ab3") {
-    localStorage.setItem("overskrift", "Fuldt subscription");
+    localStorage.setItem("overskrift", "Fuldt Abonnement");
     localStorage.setItem("text", "Abonnementet giver ubegrænset adgang til den digitale avis samt papiravisen tilsendt fredag og lørdag. Abonnementet er fortløbende og fortsætter efter de første 3 måneder til normalpris.");
     localStorage.setItem("pris", 440);
   }

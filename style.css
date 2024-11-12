@@ -51,7 +51,12 @@ h3 {
   max-width: 1000px;
   height: 60px;
   justify-content: space-between;
-  align-items: center
+  align-items: center;
+  margin:0 auto;
+}
+.topnav a.active-link {
+  font-weight: bold;
+  color: #E30613; /* Optional: add a color change for the active link */
 }
 
 a:visited {
@@ -67,6 +72,11 @@ a:link {
   list-style: none;
   display: flex;
   align-items: center;
+  z-index:9999;
+  width:100%;
+  justify-content: flex-start;
+  padding-left:2em;
+
 }
 
 .menu-logo {
@@ -75,7 +85,6 @@ a:link {
 
 ul li {
   padding-right: 1em;
-  flex: 1;
 }
 
 ul li a {
@@ -101,12 +110,13 @@ ul li a:hover {
 .burger-menu-button {
   display: none;
   cursor: pointer;
+  margin:0;
 }
 
 @media (max-width: 1015px) {
   /* Medium Screens */
   #wrapper {
-    max-width: 96vw;
+    max-width: 90vw;
   }
 
   h1 {
@@ -119,9 +129,6 @@ ul li a:hover {
     line-height: 1.2em;
   }
 
-  .topnav {
-    max-width: 600px;
-  }
 
   ul li a {
     font-size: 0.625em;
@@ -131,15 +138,15 @@ ul li a:hover {
     display: flex;
   }
 
-  .move-right {
-    margin-left: auto;
-  }
 }
 
 @media (max-width: 768px) {
   /* Small Screens */
   #wrapper {
-    max-width: 95vw;
+    max-width: 90vw;
+  }
+  .move-right {
+    margin-left: 0  ;
   }
 
   h1 {
@@ -148,11 +155,9 @@ ul li a:hover {
   }
 
   .topnav {
-    max-width: 400px;
     justify-content: space-between;
     padding: 0 1.3em;
     margin-bottom: 2em;
-    margin-top: 0.5em;
   }
 
   .burger-menu-button {
@@ -176,12 +181,12 @@ ul li a:hover {
   }
 
   .menu.active {
-    left: 10px;
+    left: 1px;
     z-index: 9999;
-    max-width: 300px;
+    width: 300px;
   }
 
-  ul li {
+  ul li { 
     padding-bottom: 3em;
   }
 

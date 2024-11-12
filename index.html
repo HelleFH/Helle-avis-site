@@ -8,7 +8,11 @@
     <title>Document</title>
 
     <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-HX/PS8xWOTQ2fOXyOYBLCWevO8PapHgC+xyJGz57QsBRf4Lq3V7/KgTzwT28mR0oDdS/oEGcDDiJtrZke9UBvA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- Link without integrity attribute -->
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+/>
 
 
     <link href="style.css" rel="stylesheet">
@@ -22,7 +26,6 @@
 </head>
 
 <body>
-    <div id="wrapper">
         <header>
             <nav class="topnav">
                 <ul>                    <a href="index.html">
@@ -30,18 +33,14 @@
                     </a>
                 </ul>
                 <ul class="flex1 menu">
-                  <li>
-                    <a href="index.html">
-                      <img class="menu-logo" src="images/Logo.png">
-                    </a>
-                  </li>
-                  <li><a href="tom1.html" class="active-link">NYHEDER</a></li>
-                  <li><a href="tour-article.html">POLITIK</a></li>
-                  <li><a href="index.html">DEBAT</a></li>
+             
+                  <li><a href="#" class="active-link">NYHEDER</a></li>
+                  <li><a href="#">POLITIK</a></li>
+                  <li><a href="#">DEBAT</a></li>
                   <li><a href="tour-article.html" >SPORT</a></li>
-                  <li><a href="index.html">KULTUR</a></li>
-                  <li><a href="index.html">BEGIVENHEDER</a></li>
-                  <li class="move-right"><a href="subscription1.html">ABONNEMENT</a></li>
+                  <li><a href="#">KULTUR</a></li>
+                  <li><a href="#">BEGIVENHEDER</a></li>
+                  <li class="move-right"><a href="subscription-overview.html">ABONNEMENT</a></li>
                 </ul>
               
                 <button id="burger-menu-button" class="burger-menu-button" aria-label="Toggle Menu">
@@ -49,6 +48,7 @@
                 </button>
               </nav>
         </header>
+        <div id="wrapper">
 
         <main>
 
