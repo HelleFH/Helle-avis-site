@@ -5,42 +5,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Abonnement</title>
     <link href="style.css" rel="stylesheet">
     <link href="subscription-form.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <script src="form.js" defer></script>
     <script src="result.js" defer></script>
     <script src="burger.js" defer></script>
-
-
-</head>
+    <script src="active-link.js" defer></script>
+    <script src="form-validation.js" defer></script>
 </head>
 
 <body>
-
     <header>
         <nav class="topnav">
-            <ul>                    <a href="index.html">
-                  <img class="menu-logo-mobil" src="images/Logo.png">
-                </a>
-            </ul>
-            <ul class="flex1 menu">
-         
-              <li><a href="#" class="active-link">NYHEDER</a></li>
-              <li><a href="#">POLITIK</a></li>
-              <li><a href="#">DEBAT</a></li>
-              <li><a href="tour-article.html" >SPORT</a></li>
-              <li><a href="#">KULTUR</a></li>
-              <li><a href="#">BEGIVENHEDER</a></li>
-              <li class="move-right"><a href="subscription-overview.html">ABONNEMENT</a></li>
-            </ul>
+          <!-- Logo Link -->
+          <ul>
+            <li>
+              <a href="index.html">
+                <img class="menu-logo-mobil" src="images/Logo.png" alt="Logo">
+              </a>
+            </li>
+          </ul>
           
-            <button id="burger-menu-button" class="burger-menu-button" aria-label="Toggle Menu">
-              <i class="fas fa-bars"></i>
-            </button>
-          </nav>
-    </header>
+          <!-- Main Menu Links -->
+          <ul class="flex1 menu">
+            <li><a href="tour-article.html">SPORT</a></li><li><a>NYHEDER</a></li>
+            <li><a>POLITIK</a></li> 
+            <li><a>DEBAT</a></li>   
+            
+            <li><a>KULTUR</a></li> 
+            <li><a>BEGIVENHEDER</a></li> 
+            <li class="move-right"><a href="subscription-overview.html">ABONNEMENT</a></li>
+          </ul>
+          
+          <!-- Burger Menu Button (for mobile) -->
+          <button id="burger-menu-button" class="burger-menu-button" aria-label="Toggle Menu">
+            <i class="fas fa-bars"></i>
+          </button>
+        </nav>
+      </header>
+            
 
         <div id="wrapper">
 
@@ -167,114 +172,6 @@
     </div>
     </div>
 </body>
-<script>document.querySelector("#my-form").addEventListener("submit", function(event) {
-    event.preventDefault(); // Prevent form submission
 
-    // Clear previous error messages
-    document.getElementById("firstNameError").textContent = "";
-    document.getElementById("lastNameError").textContent = "";
-    document.getElementById("emailError").textContent = "";
-    document.getElementById("passwordError").textContent = "";
-    document.getElementById("passwordRepeatError").textContent = "";
-    document.getElementById("termsError").textContent = "";
-
-    // Retrieving input elements
-    var firstNameInput = document.getElementsByName("firstName")[0];
-    var lastNameInput = document.getElementsByName("lastName")[0];
-    var emailInput = document.getElementsByName("email")[0];
-    var passwordInput = document.getElementsByName("password")[0];
-    var passwordRepeatInput = document.getElementsByName("confirm-password")[0];
-    var termsCheckbox = document.getElementById("terms");
-
-    // Retrieving input values
-    var firstName = firstNameInput.value.trim();
-    var lastName = lastNameInput.value.trim();
-    var email = emailInput.value.trim();
-    var password = passwordInput.value;
-    var passwordRepeat = passwordRepeatInput.value;
-
-    // Regular expression patterns
-    var namePattern = /^[A-Za-z\s]+$/;
-    var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-    var isValid = true;
-
-    // Validate first name
-    if (!firstName) {
-        document.getElementById("firstNameError").textContent = "Please enter your first name";
-        firstNameInput.focus();
-        isValid = false;
-    } else if (!namePattern.test(firstName)) {
-        document.getElementById("firstNameError").textContent = "Please enter a valid first name";
-        firstNameInput.focus();
-        isValid = false;
-    }
-
-    // Validate last name
-    if (!lastName) {
-        document.getElementById("lastNameError").textContent = "Please enter your last name";
-        lastNameInput.focus();
-        isValid = false;
-    } else if (!namePattern.test(lastName)) {
-        document.getElementById("lastNameError").textContent = "Please enter a valid last name";
-        lastNameInput.focus();
-        isValid = false;
-    }
-
-    // Validate email
-    if (!email) {
-        document.getElementById("emailError").textContent = "Please enter your email";
-        emailInput.focus();
-        isValid = false;
-    } else if (!emailPattern.test(email)) {
-        document.getElementById("emailError").textContent = "Please enter a valid email";
-        emailInput.focus();
-        isValid = false;
-    }
-
-    // Validate password
-    if (password.length < 3) {
-        document.getElementById("passwordError").textContent = "Please enter a password";
-        passwordInput.focus();
-        isValid = false;
-    } else {
-        document.getElementById("passwordError").textContent = "";
-    }
-
-    // Validate password repeat
-    if (password !== passwordRepeat) {
-        document.getElementById("passwordRepeatError").textContent = "Passwords do not match";
-        passwordRepeatInput.focus();
-        isValid = false;
-    } else {
-        document.getElementById("passwordRepeatError").textContent = "";
-    }
-
-    // Validate terms checkbox
-    if (!termsCheckbox.checked) {
-        document.getElementById("termsError").textContent = "You must accept the terms and conditions";
-        termsCheckbox.focus();
-        isValid = false;
-    }
-
-    // If the form is invalid, do not submit
-    if (!isValid) {
-        return false;
-    }
-
-    // Submit the form if all validations passed
-    window.location.href = window.location.href;  // Redirect to same page as an example
-});
-
-// Enable or disable the submit button based on checkbox
-document.getElementById("terms").addEventListener("change", function() {
-    var submitButton = document.getElementById("submit-btn");
-    if (this.checked) {
-        submitButton.disabled = false;  // Enable submit button if checkbox is checked
-    } else {
-        submitButton.disabled = true;  // Disable submit button if checkbox is unchecked
-    }
-});
-</script>
 
 </html>

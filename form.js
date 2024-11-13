@@ -26,6 +26,11 @@ form.addEventListener('submit', function(event) {
   }
 
   // Validate password and confirm password fields
+  if (password.value.trim() === '') {
+    alert('Adgangskode er påkrævet!');
+    return;
+  }
+
   if (password.value !== confirmPassword.value) {
     alert('Adgangskoderne er ikke ens!');
     return;

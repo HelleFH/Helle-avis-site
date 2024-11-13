@@ -8,76 +8,76 @@
 	min-width: 800px;
 	max-width: 800px;
 	margin: 0 auto;
-  }
-  
-  .subscription-form-header {
+}
+
+.subscription-form-header {
 	grid-column: 1 / span 2;
 	text-align: center;
 	padding-bottom: 2em;
-  }
-  
-  form {
+}
+
+form {
 	display: grid;
 	grid-template-columns: 1fr 2fr;
 	gap: 1em;
 	background-color: #EEEEEE;
 	padding: 3em 10% 3em 0;
 	align-items: center;
-  }
-  
- form label {
+}
+
+form label {
 	text-align: right;
 	font-size: 0.75em;
 	line-height: 26px;
-  }
-  
-  form input[type="email"],
-  form input[type="password"],
-  form input[type="text"],
-  form input[type="tel"] {
+}
+
+form input[type="email"],
+form input[type="password"],
+form input[type="text"],
+form input[type="tel"] {
 	width: 100%;
 	padding: 5px;
 	font-size: 1em;
 	grid-column: 2;
-  }
-  
-  .checkboxes {
+}
+
+.checkboxes {
 	display: flex;
 	flex-direction: column;
 	grid-column: 2;
 	grid-row: 9;
 	padding-top: 2em;
-  }
-  
-  .checkboxes label {
+}
+
+.checkboxes label {
 	text-align: left;
-  }
-  
-  .checkboxes div {
+}
+
+.checkboxes div {
 	display: flex;
 	align-items: flex-start;
 	margin-bottom: 1em;
-  }
-  
-  .checkboxes input[type="checkbox"] {
+}
+
+.checkboxes input[type="checkbox"] {
 	margin-right: 0.5em;
 	margin-top: 0.45em;
-  }
-  
-  .checkboxes_input {
+}
+
+.checkboxes_input {
 	height: 0.75em;
 	width: 0.75em;
 	appearance: none;
 	background-color: #FFFFFF;
-  }
-  
+}
 
-  .subscription-box button {
+
+.subscription-box button {
 	margin-top: 1.25em;
 	font-size: 1em;
-  }
-  
-  .subscription-text {
+}
+
+.subscription-text {
 	background-color: #EEEEEE;
 	padding: 5%;
 	font-weight: 400;
@@ -85,18 +85,18 @@
 	display: flex;
 	flex-direction: column;
 	padding-top: 10%;
-  }
-  
-  .subscription-text h3 {
+}
+
+.subscription-text h3 {
 	margin: 0 0 0.625em;
-  }
-  
-  .subscription-text p {
+}
+
+.subscription-text p {
 	margin: 0 0 5px;
 	font-size: 10px;
-  }
-  
-  .rates {
+}
+
+.rates {
 	border-bottom: 1px solid black;
 	font-weight: 400;
 	font-size: 12px;
@@ -104,34 +104,34 @@
 	padding: 0.5em 0;
 	display: flex;
 	justify-content: space-between;
-  }
-  
-  #message {
+}
+
+#message {
 	text-align: right;
 	color: #F00;
-  }
-  
-  #pris,
-  #rabat,
-  #total {
+}
+
+#pris,
+#rabat,
+#total {
 	align-self: flex-end;
 	font-size: 1em;
 	line-height: 25px;
-  }
-  
-  .normalpris {
+}
+
+.normalpris {
 	border-top: 1px solid black;
-  }
-  
-  .total {
+}
+
+.total {
 	font-weight: 700;
-  }
-  
-  .vilkår-subscription-form {
+}
+
+.vilkår-subscription-form {
 	padding: 2em 0;
-  }
-  
-  .contact-form {
+}
+
+.contact-form {
 	grid-column: 1 / span 2;
 	margin: 0 auto;
 	background-color: #EEEEEE;
@@ -142,55 +142,65 @@
 	padding-top: 2em;
 	margin-bottom: 4em;
 	min-width: 800px;
-  }
-  
-  .contact-form button {
+}
+
+.contact-form button {
 	font-weight: 400;
 	font-size: 0.75em;
 	margin-top: 1.25em;
-  }
-  
-  /* Media Queries */
-  @media only screen and (max-width: 1015px) {
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1015px) {
 	.subscription-form {
-		display:flex;
-	flex-direction: column;
-	min-width: 100%;
-	justify-content: center;
-	align-items: center;
+		display: flex;
+		flex-direction: column;
+		min-width: 100%;
+		justify-content: center;
+		align-items: center;
 
 	}
-  
 
-  
+
+
 	form {
-	 padding:2em 2em 1em;
+		padding: 2em 2em 1em;
 	}
-  
+
 
 	.contact-form {
-	  min-width: 600px;
+		min-width: 600px;
 	}
-  }
-  
-  @media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 768px) {
 
 
-  
+
+	form {
+		padding: 2em 1em 1em;
+	}
+
 	form label {
-	  text-align: left;
-	  font-size: 1em;
-	  padding-left: 1em;
+		text-align: left;
+		font-size: 1em;
+	}
+
+	form>label {
+		white-space: nowrap;
 	}
 
 	.checkboxes {
-	  grid-column: 1/span 2;
-	  padding-left: 10%;
+		grid-column: 1/span 2;
 	}
-  
+
+	.checkboxes div {
+
+		white-space: wrap;
+	}
+
 	.contact-form {
-	  min-width: 300px;
-	  text-align: center;
+		min-width: 300px;
+		text-align: center;
 	}
-  }
-  
+}

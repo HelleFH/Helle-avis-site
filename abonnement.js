@@ -18,3 +18,6 @@ const totalText = document.querySelector("#total");
 totalText.textContent = price - discount + ",00";
 
 
+
+
+

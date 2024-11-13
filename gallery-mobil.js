@@ -1,4 +1,4 @@
-  var slide = document.querySelectorAll('.slide-mobil');
+  var slides = document.querySelectorAll('.slide-mobil');
   var mobileScreenWidth = 767;
 
   function loadMobileImages() {

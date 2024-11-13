@@ -5,18 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Forside</title>
 
     <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
-<!-- Link without integrity attribute -->
 <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
 />
 
-
     <link href="style.css" rel="stylesheet">
     <link href="index.css" rel="stylesheet">
+    <link href="newsletter.css" rel="stylesheet">
+
 
     <script src="burger.js" defer></script>
     <script src="form-newsletter.js" defer></script>
@@ -26,28 +26,35 @@
 </head>
 
 <body>
-        <header>
-            <nav class="topnav">
-                <ul>                    <a href="index.html">
-                      <img class="menu-logo-mobil" src="images/Logo.png">
-                    </a>
-                </ul>
-                <ul class="flex1 menu">
-             
-                  <li><a href="#" class="active-link">NYHEDER</a></li>
-                  <li><a href="#">POLITIK</a></li>
-                  <li><a href="#">DEBAT</a></li>
-                  <li><a href="tour-article.html" >SPORT</a></li>
-                  <li><a href="#">KULTUR</a></li>
-                  <li><a href="#">BEGIVENHEDER</a></li>
-                  <li class="move-right"><a href="subscription-overview.html">ABONNEMENT</a></li>
-                </ul>
-              
-                <button id="burger-menu-button" class="burger-menu-button" aria-label="Toggle Menu">
-                  <i class="fas fa-bars"></i>
-                </button>
-              </nav>
-        </header>
+     <header>
+    <nav class="topnav">
+      <!-- Logo Link -->
+      <ul>
+        <li>
+          <a href="index.html">
+            <img class="menu-logo-mobil" src="images/Logo.png" alt="Logo">
+          </a>
+        </li>
+      </ul>
+      
+      <!-- Main Menu Links -->
+      <ul class="flex1 menu">
+        <li><a href="tour-article.html">SPORT</a></li><li><a>NYHEDER</a></li>
+        <li><a>POLITIK</a></li> 
+        <li><a>DEBAT</a></li>   
+        
+        <li><a>KULTUR</a></li> 
+        <li><a>BEGIVENHEDER</a></li> 
+        <li class="move-right"><a href="subscription-overview.html">ABONNEMENT</a></li>
+      </ul>
+      
+      <!-- Burger Menu Button (for mobile) -->
+      <button id="burger-menu-button" class="burger-menu-button" aria-label="Toggle Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+  </header>
+        
         <div id="wrapper">
 
         <main>
@@ -55,7 +62,7 @@
             <div id="newsletter-form-container" style="display: none;">
                 <form id="newsletter-form">
                     <div class="close-icon" onclick="closeForm()">X</div>
-                    <p class="newsletter-message">Tilmeld dig vores newsletter:</p>
+                    <p class="newsletter-message">Tilmeld dig vores Nyhedsbrev:</p>
                     <label for="name">Navn:</label>
                     <input type="text" id="name" name="name">
                     <label for="email">Email:</label>
@@ -67,11 +74,7 @@
                     </div>
                 </form>
             </div>
-              
-              
-              
-              
-              
+
               
             <div class="index">
 
@@ -126,10 +129,6 @@
                         </a>
 
                     </div>
-
-
-
-
 
                     <article class="top-stories flex1">
                         <h2>Mest læste</h2>

@@ -12,6 +12,9 @@
   font-family: 'Inter', sans-serif;
   font-size: 16px;
   box-sizing: border-box;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased; /* Makes fonts smoother on WebKit browsers */
+  -moz-osx-font-smoothing: grayscale;  /* Font smoothing for Firefox on macOS */
 }
 
 body {
@@ -48,16 +51,17 @@ h3 {
   display: flex;
   background-color: #EEEEEE;
   padding-left: 1.2em;
-  max-width: 1000px;
   height: 60px;
   justify-content: space-between;
   align-items: center;
   margin:0 auto;
+  width:100%;
 }
 .topnav a.active-link {
   font-weight: bold;
   color: #E30613; /* Optional: add a color change for the active link */
 }
+.topnav ul {list-style: none;}
 
 a:visited {
 	text-decoration: none;
@@ -96,6 +100,7 @@ ul li a {
   height: 1.25em;
   text-align: center;
   line-height: 40px;
+  cursor: pointer;
 }
 
 ul li a:hover {
@@ -186,7 +191,7 @@ ul li a:hover {
     width: 300px;
   }
 
-  ul li { 
+  .menu li { 
     padding-bottom: 3em;
   }
 
@@ -220,12 +225,16 @@ ul li a:hover {
 .bottomnav {
   display: flex;
   flex-direction: column;
-  background-color: #000000;
-  color: #EEEEEE;
   padding: 1em 0;
   text-align: center;
   font-size: 1.25em;
   line-height: 28px;
+  width: 100%;
+  max-width: 1000px;
+  background-color: #EEEEEE;
+  bottom:0;
+  margin-top:2em;
+
 }
 
 .kontakt, .åbningstider {
@@ -245,6 +254,7 @@ button {
   width: fit-content;
   margin: 1em auto 2em;
   transition: background-color 0.3s ease;
+  float:right;
 }
 
 button:hover {

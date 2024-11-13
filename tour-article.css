@@ -174,14 +174,25 @@
 }
 
 /* Media Queries */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1000px) {
+@media only screen and (min-device-width:300px) and (max-device-width: 1000px) {
+
+    .article-linje1 {
+
+        padding-top: 0em;
+    }
+
     .tour-article-grid {
+        display: flex;
+        flex-direction: column;
         padding-top: 2em;
+    }
+
+    .slider {
+        max-width: 95vw;
     }
 
     .tourdefrancearticle-billede {
         margin-bottom: 0em;
-        width: 80%;
     }
 
     .article-top {
@@ -194,17 +205,15 @@
     }
 
     .gallery-grid {
-        grid-template-columns: 1fr;
-        padding: 2em 0;
-    }
-
-    .slider {
-        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+ 
     }
 
     .caption {
         grid-column: 1;
         grid-row: 2;
+        align-self: center;
     }
 
     .maps-grid {
@@ -224,65 +233,13 @@
     }
 }
 
-@media only screen and (min-device-width: 300px) and (max-device-width: 700px) and (orientation: portrait) {
-    .tour-article-grid {
-        margin: 0 auto;
-    }
-
-    .article-top {
-        margin: 0;
-        padding: 0;
-    }
-
+@media only screen and (min-device-width:300px) and (max-device-width: 768px) {
     .sub-headline {
-        font-weight: 400;
         font-size: 1.2em;
     }
 
-    .tourdefrancearticle-billede {
-        width: 90%;
-    }
+    .tour-article-grid {
 
-    .article-text {
-        line-height: 1.5em;
-        font-size: 1em;
-        padding: 0 !important;
-    }
-
-    .gallery-grid {
-        padding: 2em 0;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .slider {
-        max-width: 300px;
-    }
-
-    .caption {
-        grid-column: 1;
-        grid-row: 2;
-    }
-
-    .maps-grid {
-        display: flex;
-        flex-direction: column;
-        padding-top: 1em;
-    }
-
-    .google-map {
-        height: 100%;
-        width: 100%;
-    }
-
-    .maps-caption {
-        padding-top: 1em;
-    }
-
-    #next,
-    #back {
-        font-size: 2em;
-        margin: 0.4em;
-        opacity: 80%;
+        gap: 1em;
     }
 }
